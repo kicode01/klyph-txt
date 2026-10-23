@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="s34-title">
+  <title id="s34-title">Klyph S3 - The AST Syntax Lattice Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <rect x="64" y="68" width="16" height="120" rx="4" fill="#0284c7"/>
+  <polygon points="128,116 184,60 196,72 140,128" fill="#0284c7"/>
+  <polygon points="140,128 196,184 184,196 128,140" fill="#0284c7"/>
+  <circle cx="72" cy="68" r="20" fill="#0284c7"/>
+  <circle cx="72" cy="188" r="20" fill="#0284c7"/>
+  <circle cx="190" cy="66" r="20" fill="#0284c7"/>
+  <circle cx="190" cy="190" r="20" fill="#0284c7"/>
+  <circle cx="128" cy="128" r="24" fill="#d97706"/>
+</svg>

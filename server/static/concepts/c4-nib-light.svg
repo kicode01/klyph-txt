@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title">
+  <title id="title">Klyph Lapidary Nib Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <path d="M52 62 L68 46 V212 H52 Z" fill="#0284c7"/>
+  <path d="M72 46 L88 62 V212 H72 Z" fill="#0284c7"/>
+  <path d="M104 136 L176 64 H216 L134 146 Z" fill="#0284c7"/>
+  <path d="M134 110 L216 192 H176 L104 120 Z" fill="#0284c7"/>
+  <polygon points="118,104 142,128 118,152 94,128" fill="#d97706"/>
+</svg>

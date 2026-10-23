@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="c4-title">
+  <title id="c4-title">Klyph Concept 4 - The Carved Glyphic Tablet</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Left stone tablet pillar -->
+  <path d="M48 48 H92 V208 H48 Z" fill="#00f0ff"/>
+  <!-- Upper chiseled wing -->
+  <path d="M120 120 L180 60 H208 V72 L144 136 Z" fill="#00f0ff"/>
+  <!-- Lower chiseled wing -->
+  <path d="M144 120 L208 184 V196 H180 L120 136 Z" fill="#00f0ff"/>
+  <!-- Monolithic keystone block -->
+  <rect x="108" y="112" width="24" height="32" rx="4" fill="#f59e0b"/>
+</svg>

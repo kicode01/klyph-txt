@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="titan-1-threads-title">
+  <title id="titan-1-threads-title">Klyph Responsive Icon - titan-1-threads</title>
+  <style>
+    .mode-light { display: none; }
+    .mode-dark  { display: block; }
+    @media (prefers-color-scheme: light) {
+      .mode-light { display: block; }
+      .mode-dark  { display: none; }
+    }
+  </style>
+  <g class="mode-dark">
+    <rect width="256"height="256" rx="64" fill="#080b10"/>
+  <!-- Continuous Fluid Ribbon -->
+  <path d="M 76 196 L 76 84 C 76 56 104 48 126 64 C 146 78 122 116 130 128 C 142 142 170 82 188 64 C 202 50 214 66 200 86 C 182 112 142 144 132 152 L 188 196" fill="none" stroke="#00f0ff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Golden Focus Core -->
+  <circle cx="128" cy="128" r="10" fill="#f59e0b"/>
+  </g>
+  <g class="mode-light">
+    <rect width="256"height="256" rx="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="4"/>
+  <!-- Continuous Fluid Ribbon -->
+  <path d="M 76 196 L 76 84 C 76 56 104 48 126 64 C 146 78 122 116 130 128 C 142 142 170 82 188 64 C 202 50 214 66 200 86 C 182 112 142 144 132 152 L 188 196" fill="none" stroke="#0284c7" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Golden Focus Core -->
+  <circle cx="128" cy="128" r="10" fill="#f59e0b"/>
+  </g>
+</svg>

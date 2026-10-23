@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="redesign-3-cadence-title">
+  <title id="redesign-3-cadence-title">Klyph The Human Cadence Spectrum</title>
+  <style>
+    :root {
+      --klyph-base: #080b10;
+      --klyph-glyph: #00f0ff;
+      --klyph-keystone: #f59e0b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --klyph-base: #fbfaf6;
+        --klyph-glyph: #0284c7;
+        --klyph-keystone: #d97706;
+      }
+    }
+    .klyph-base { fill: var(--klyph-base); }
+    .klyph-glyph { fill: var(--klyph-glyph); }
+    .klyph-keystone { fill: var(--klyph-keystone); }
+  </style>
+<rect width="256" height="256" rx="60" class="klyph-base"/>
+  <!-- Left foundational rhythm wave -->
+  <path d="M68 64 C52 82 44 104 44 128 C44 152 52 174 68 192 L86 174 C75 160 68 145 68 128 C68 111 75 96 86 82 Z" class="klyph-glyph"/>
+  <!-- Right upper cadence burst -->
+  <path d="M188 64 C204 82 212 104 212 128 C212 152 204 174 188 192 L170 174 C181 160 188 145 188 128 C188 111 181 96 170 82 Z" class="klyph-glyph"/>
+  <!-- Inner rhythm brackets -->
+  <path d="M96 96 C88 105 84 116 84 128 C84 140 88 151 96 160 L112 144 C109 139 108 134 108 128 C108 122 109 117 112 112 Z" class="klyph-glyph"/>
+  <path d="M160 96 C168 105 172 116 172 128 C172 140 168 151 160 160 L144 144 C147 139 148 134 148 128 C148 122 147 117 144 112 Z" class="klyph-glyph"/>
+  <!-- Golden voice pulse core -->
+  <circle cx="128" cy="128" r="14" class="klyph-keystone"/>
+</svg>

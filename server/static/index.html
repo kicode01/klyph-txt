@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="paper">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>klyph-txt | Autonomous Neurosymbolic Writing</title>
+  
+  <!-- PWA & Mobile Ergonomics -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#090d16" id="meta-theme-color">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="klyph-txt">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="shortcut icon" href="icon.svg">
+
+  <!-- Eye-Comfort Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="workspace">
+    <!-- Top Navigation Bar (Clean & Focused) -->
+    <header class="app-navbar">
+      <div class="brand">
+        <img src="icon.svg" alt="klyph-txt Logo" class="brand-logo-img" width="28" height="28">
+        <span class="brand-name">klyph-txt</span>
+      </div>
+
+      <!-- Main Navigation Tabs with Smooth Animated Segment Control -->
+      <nav class="nav-segments" aria-label="Tool selection">
+        <button id="tab-grammar" class="nav-segment active" onclick="switchTab('grammar')">
+          <svg class="ui-svg" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+          <span class="nav-label">Editorial Chisel</span>
+        </button>
+        <button id="tab-paraphrase" class="nav-segment" onclick="switchTab('paraphrase')">
+          <svg class="ui-svg" viewBox="0 0 24 24"><path d="M21.5 2v6h-6"/><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-1.19"/></svg>
+          <span class="nav-label">Syntactic Morph</span>
+        </button>
+        <button id="tab-detector" class="nav-segment" onclick="switchTab('detector')">
+          <svg class="ui-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <span class="nav-label">Spectral Radar</span>
+        </button>
+        <button id="tab-humanizer" class="nav-segment" onclick="switchTab('humanizer')">
+          <svg class="ui-svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span class="nav-label">Humanizer</span>
+        </button>
+      </nav>
+
+      <!-- Right Header Utilities (Clean & Calm) -->
+      <div class="header-utilities">
+        <!-- Ambient Desktop HUD Companion Launcher -->
+        <button id="btn-launch-hud" class="util-icon-btn" onclick="openCompanionHUD()" title="Launch Pop-out Ambient Companion">
+          <svg class="ui-svg" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m14 9 3 3-3 3"/></svg>
+        </button>
+
+        <!-- Command Palette Trigger Button (Ctrl + K) -->
+        <button id="btn-open-palette" class="util-icon-btn" onclick="openCommandPalette()" title="Command Palette (Ctrl + K)">
+          <svg class="ui-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <!-- Eye-Friendly Theme Toggle -->
+        <button id="btn-theme-toggle" class="util-icon-btn" onclick="toggleTheme()" title="Toggle Theme (Warm Paper ↔ Twilight Slate)">
+          <span id="theme-icon-slot">
+            <svg class="ui-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hidden file input for file drag/import -->
+    <input type="file" id="file-importer" accept=".txt,.md,.rtf" style="display: none;" onchange="handleFileImport(event)">
+
+    <!-- Main Workspace Content -->
+    <main class="workspace-body">
+      <!-- ============================================================ -->
+      <!-- SECTION 1: EDITOR & GRAMMAR                                  -->
+      <!-- ============================================================ -->
+      <section id="section-grammar" class="tab-panel active">
+        <div class="editor-shell">
+          <!-- Mobile Viewpane Switcher (Phone Ergonomics) -->
+          <div class="mobile-pane-switcher" id="mobile-grammar-switcher">
+            <button class="pane-switch-btn active" id="btn-mobile-doc" onclick="setMobileGrammarPane('editor')">
+              <svg class="ui-svg xs" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+              <span>Document</span>
+            </button>
+            <button class="pane-switch-btn" id="btn-mobile-rail" onclick="setMobileGrammarPane('rail')">
+              <svg class="ui-svg xs" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+              <span>Diagnostics (<span id="mobile-badge-count">0</span>)</span>
+            </button>
+          </div>
+
+          <!-- Text Editing Area -->
+          <div class="document-surface drop-target" id="grammar-surface">
+            <!-- Command Toolbar -->
+            <div class="surface-header">
+              <div class="surface-actions">
+                <button class="action-btn" onclick="triggerFileInput('grammar')">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  <span>Import</span>
+                </button>
+                <button class="action-btn" onclick="loadSampleGrammar()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-1 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                  <span>Sample</span>
+                </button>
+                <button class="action-btn" onclick="clearGrammar()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+                  <span>Clear</span>
+                </button>
+                <button id="btn-revert-grammar" class="action-btn revert-btn" onclick="revertGrammarText()" style="display: none;">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
+                  <span>Revert</span>
+                </button>
+              </div>
+
+              <div class="document-telemetry">
+                <button id="btn-flow-toggle" class="telemetry-pill flow-toggle-btn" onclick="toggleFlowMode()" title="Cognitive Flow: silences live squiggles while actively typing (> 30 WPM), polishes on pause">
+                  <span class="flow-indicator-dot"></span>
+                  <span id="flow-status-text">⚡ Flow: Active</span>
+                </button>
+                <span id="grammar-stats" class="telemetry-pill">0 words • ~0s read</span>
+                <span id="readability-badge" class="telemetry-pill accent">Reading Ease: 100</span>
+              </div>
+            </div>
+
+            <!-- Editor Surface with Synchronized In-Text Highlight Backdrop -->
+            <div class="editor-workspace-wrap" id="editor-workspace-wrap">
+              <div class="gutter-handle" id="active-gutter-marker" style="display: none;">
+                <svg class="ui-svg xs" viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+              </div>
+              <div class="editor-backdrop" id="grammar-backdrop" aria-hidden="true">
+                <div class="editor-highlights" id="grammar-highlights"></div>
+              </div>
+              <textarea id="grammar-input" spellcheck="false" placeholder="Start typing, paste your text, or drag and drop a .txt/.md file here to verify grammar, syntax, and clarity in real time..."></textarea>
+            </div>
+
+            <!-- Bottom Action Footer -->
+            <div class="surface-footer">
+              <div class="footer-left">
+                <span class="shortcut-tip"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> to inspect • LanguageTool 50k verification</span>
+              </div>
+              <div class="footer-right">
+                <button class="btn btn-secondary" onclick="copyGrammarText()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  <span>Copy</span>
+                </button>
+                <button class="btn btn-primary" onclick="triggerGrammarCheck()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                  <span>Check Text</span>
+                </button>
+                <button id="btn-accept-all" class="btn btn-commit" onclick="acceptAllCorrections()" disabled>
+                  <svg class="ui-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Apply All Fixes</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diagnostic Review Rail (Linguistic Fidelity) -->
+          <aside class="diagnostic-rail mobile-pane-hidden">
+            <!-- Unified Review Header (Clean & Intuitive) -->
+            <div class="rail-header-box">
+              <div class="rail-status-row">
+                <div class="rail-title-group">
+                  <span class="rail-klyph-diamond">◆</span>
+                  <span class="rail-heading">Revisions</span>
+                  <span class="rail-badge-count" id="issues-counter">0</span>
+                </div>
+                <div class="rail-score-tag" title="Writing Fidelity computed across grammar, flow, and sentence variety">
+                  <span class="score-label">Fidelity</span>
+                  <span id="quality-score-value" class="quality-score-number">100</span>
+                </div>
+              </div>
+              
+              <!-- Subtle micro progress hairline -->
+              <div class="quality-progress-track">
+                <div id="quality-progress-fill" class="quality-progress-fill" style="width: 100%;"></div>
+              </div>
+
+              <!-- Streamlined Category Filter -->
+              <div class="category-pill-bar" id="category-pill-bar">
+                <button class="cat-pill active" onclick="setCategoryFilter('all', this)" id="pill-all">
+                  <span>All</span> <span class="pill-count" id="count-all">0</span>
+                </button>
+                <button class="cat-pill" onclick="setCategoryFilter('correctness', this)" id="pill-grammar">
+                  <span>Grammar</span> <span class="pill-status" id="status-grammar">✓</span>
+                </button>
+                <button class="cat-pill" onclick="setCategoryFilter('clarity', this)" id="pill-clarity">
+                  <span>Clarity</span> <span class="pill-status" id="status-clarity">✓</span>
+                </button>
+                <button class="cat-pill" onclick="setCategoryFilter('delivery', this)" id="pill-delivery">
+                  <span>Style</span> <span class="pill-status" id="status-delivery">✓</span>
+                </button>
+              </div>
+
+              <!-- Hidden subtabs for backward compatibility with JS handlers -->
+              <div class="rail-subtabs" style="display: none;" role="tablist">
+                <button class="subtab-btn active" id="tab-proofread" onclick="switchRailSubtab('proofread')"><span>Proofread</span></button>
+                <button class="subtab-btn" id="tab-paragraphs" onclick="switchRailSubtab('paragraphs')"><span>Paragraphs</span></button>
+                <button class="subtab-btn" id="tab-habits" onclick="switchRailSubtab('habits')"><span>Habits</span><span class="subtab-count-badge" id="habits-badge" style="display: none;">0</span></button>
+              </div>
+            </div>
+
+            <!-- Issues Rail Body Container -->
+            <div id="issues-list" class="rail-body">
+              <div class="empty-state">
+                <div class="empty-icon-wrap">
+                  <svg class="empty-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <p class="empty-title">Draft is Clear</p>
+                <p class="empty-desc">No syntax errors, misplaced agreements, or wordiness detected.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 2: MULTI-MODE PARAPHRASER                            -->
+      <!-- ============================================================ -->
+      <section id="section-paraphrase" class="tab-panel">
+        <!-- Rephrasing Controls Header (Streamlined) -->
+        <div class="control-strip">
+          <div class="mode-selector">
+            <span class="control-label">Mode</span>
+            <div class="pill-group" role="radiogroup" aria-label="Paraphrase modes">
+              <button class="mode-pill active" onclick="setMode('standard', this)" title="Balanced clarity and natural flow">
+                <span>Standard</span>
+              </button>
+              <button class="mode-pill" onclick="setMode('fluency', this)" title="Maximize human rhythm and readability">
+                <span>Fluency</span>
+              </button>
+              <button class="mode-pill" onclick="setMode('formal', this)" title="Refined vocabulary for professional settings">
+                <span>Formal</span>
+              </button>
+              <button class="mode-pill" onclick="setMode('academic', this)" title="Scholarly phrasing backed by Academic Word List">
+                <span>Academic</span>
+              </button>
+              <button class="mode-pill" onclick="setMode('simple', this)" title="Plain English vocabulary and clear syntax">
+                <span>Simple</span>
+              </button>
+              <button class="mode-pill" onclick="setMode('creative', this)" title="Expressive structural variety">
+                <span>Creative</span>
+              </button>
+              <button class="mode-pill" onclick="setMode('shorten', this)" title="Trim filler and redundant clauses">
+                <span>Shorten</span>
+              </button>
+              <button class="mode-pill" onclick="setMode('expand', this)" title="Elaborate clauses with descriptive nuance">
+                <span>Expand</span>
+              </button>
+              <button class="mode-pill" onclick="setMode('heavyweight', this)" title="Heavyweight Neurosymbolic AST restructuring">
+                <span>Heavyweight AST</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="morph-quick-actions">
+            <div class="density-selector">
+              <span class="control-label">Synonyms</span>
+              <div class="segment-pill" role="group">
+                <button class="density-btn" onclick="setSynonymLevel(1, this)" title="Minimal substitutions">Low</button>
+                <button class="density-btn active" onclick="setSynonymLevel(2, this)" title="Balanced human variance">Medium</button>
+                <button class="density-btn" onclick="setSynonymLevel(3, this)" title="Higher lexical variation">High</button>
+                <button class="density-btn" onclick="setSynonymLevel(4, this)" title="Maximum expressive shift">Max</button>
+              </div>
+            </div>
+
+            <!-- Fine-Tune Toggle Button -->
+            <button class="btn-tune-toggle" id="btn-tune-toggle" onclick="toggleTuneDrawer()" title="Configure voice shift, transitions & keyword protection">
+              <svg class="ui-svg xs" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+              <span>Options</span>
+              <span class="tune-chevron" id="tune-chevron">▾</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Progressive Disclosure: Fine-Tuning Drawer (Collapsible) -->
+        <div class="constraints-strip" id="tune-drawer" style="display: none;">
+          <div class="constraint-group">
+            <label for="voice-select" class="constraint-label">Voice Shift</label>
+            <select id="voice-select" class="select-input" onchange="runParaphrase()">
+              <option value="auto">Adaptive</option>
+              <option value="force_active">Force Active</option>
+              <option value="force_passive">Force Passive</option>
+            </select>
+          </div>
+
+          <div class="constraint-group">
+            <label class="toggle-control">
+              <input type="checkbox" id="split-toggle" onchange="runParaphrase()">
+              <span class="toggle-label">Split sentences</span>
+            </label>
+          </div>
+
+          <div class="constraint-group">
+            <label class="toggle-control">
+              <input type="checkbox" id="trans-toggle" onchange="runParaphrase()">
+              <span class="toggle-label">Transitions</span>
+            </label>
+          </div>
+
+          <div class="constraint-group grow">
+            <input type="text" id="freeze-words" class="freeze-input" placeholder="Protect keywords (e.g. Python, API, React, DeepMind)" onchange="runParaphrase()">
+          </div>
+
+          <div class="constraint-actions">
+            <button id="btn-revert-para" class="action-btn revert-btn" onclick="revertParaText()" style="display: none;">
+              <svg class="ui-svg" viewBox="0 0 24 24"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
+              <span>Revert</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Transformation Conduit Bar -->
+        <div class="conduit-bar" id="para-conduit">
+          <div class="conduit-indicator">
+            <span class="conduit-node">Source</span>
+            <span class="conduit-arrow">
+              <svg class="ui-svg xs" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+            <span class="conduit-node active">Morph</span>
+          </div>
+          <div class="conduit-telemetry" id="conduit-telemetry">
+            <span class="telemetry-chip" id="para-delta-words">Ready to morph</span>
+            <span class="telemetry-chip" id="para-delta-subs" style="display: none;">0 substitutions</span>
+            <span class="telemetry-chip safe" id="para-risk-chip">0% AI Risk</span>
+          </div>
+        </div>
+
+        <!-- Split Surface: Input vs Output -->
+        <div class="dual-surface">
+          <!-- Source Column -->
+          <div class="surface-card drop-target" id="para-surface">
+            <div class="surface-card-header">
+              <span class="card-title">Original Prose</span>
+              <div class="surface-actions">
+                <button class="action-btn" onclick="triggerFileInput('para')">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  <span>Import</span>
+                </button>
+                <button class="action-btn" onclick="loadSampleParaphrase()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-1 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                  <span>Sample</span>
+                </button>
+                <button class="action-btn" onclick="clearParaInput()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+                  <span>Clear</span>
+                </button>
+              </div>
+            </div>
+            <textarea id="para-input" spellcheck="false" placeholder="Enter text or drop a file to rephrase using syntactic tree restructuring, clause shifting, and Zipf-ranked synonyms..."></textarea>
+            <div class="surface-card-footer">
+              <span class="shortcut-tip"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> to rephrase</span>
+              <button class="btn btn-primary btn-lg" onclick="runParaphrase()">
+                <svg class="ui-svg lg" viewBox="0 0 24 24"><path d="M21.5 2v6h-6"/><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-1.19"/></svg>
+                <span>Rephrase Prose</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Result Column -->
+          <div class="surface-card result-card">
+            <div class="surface-card-header">
+              <span class="card-title">Transformed Result <span class="hint-text">(Click words to swap synonyms)</span></span>
+              <button class="btn btn-secondary btn-sm" onclick="copyParaphrase()">
+                <svg class="ui-svg" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy Result</span>
+              </button>
+            </div>
+            <div id="para-output" class="diff-view" tabindex="0">
+              <span class="view-placeholder">Transformed text will be rendered here with surgical diff spans...</span>
+            </div>
+            <div class="surface-card-footer meta-footer">
+              <div id="ai-risk-badge" class="risk-meter">
+                <span class="status-dot safe"></span>
+                <span>AI Risk: 0% • High Human Variance</span>
+              </div>
+              <span id="para-metrics" class="diff-counter">0 substitutions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Word Replacement Popover -->
+        <div id="synonym-popover" class="synonym-menu" style="display: none;">
+          <div class="menu-header">
+            <span id="popover-word-title">Synonym Options</span>
+            <button class="close-btn" onclick="closeSynonymPopover()" aria-label="Close menu">
+              <svg class="ui-svg" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+          <div id="popover-synonyms-list" class="menu-items"></div>
+        </div>
+
+        <!-- Multi-candidate Grid -->
+        <div class="candidates-rail">
+          <div class="candidates-header">
+            <div class="candidates-titles">
+              <h3>Structural Variations</h3>
+              <span class="candidates-subtitle">Independent syntactic and lexical branches generated deterministically</span>
+            </div>
+          </div>
+          <div id="alternatives-list" class="candidates-grid">
+            <div class="candidate-empty">Execute a paraphrase to view diverse candidate variations.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 3: AI SPECTRUM & DECISION BOUNDARY SIMULATOR          -->
+      <!-- ============================================================ -->
+      <section id="section-detector" class="tab-panel">
+        <div class="detector-shell">
+          <!-- Text Input Panel -->
+          <div class="detector-input-card drop-target" id="detector-surface">
+            <div class="surface-header">
+              <span class="card-title">Prose Under Inspection</span>
+              <div class="surface-actions">
+                <button class="action-btn" onclick="triggerFileInput('detector')">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  <span>Import</span>
+                </button>
+                <button class="action-btn" onclick="loadSampleHumanText()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <span>Human Sample</span>
+                </button>
+                <button class="action-btn" onclick="loadSampleAIText()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M9 2v2M20 15h2M20 9h2M9 20v2M15 20v2M2 9h2M2 15h2"/></svg>
+                  <span>AI Sample</span>
+                </button>
+                <button class="action-btn" onclick="clearDetectorInput()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+                  <span>Clear</span>
+                </button>
+                <button id="btn-revert-detector" class="action-btn revert-btn" onclick="revertDetectorText()" style="display: none;">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
+                  <span>Revert</span>
+                </button>
+              </div>
+            </div>
+
+            <textarea id="detector-input" spellcheck="false" placeholder="Paste an essay, article, or paragraph to extract its statistical fingerprint and plot it against the GPTZero decision boundary..."></textarea>
+
+            <div class="surface-footer">
+              <div class="footer-left">
+                <span class="shortcut-tip"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> to scan</span>
+              </div>
+              <div class="footer-actions-group">
+                <button class="btn btn-commit" onclick="humanizeDetectorInput()" title="Auto-humanize flagged sentences using v6.0 Adversarial AST Beam">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <span>Auto-Humanize</span>
+                </button>
+                <button class="btn btn-commit" onclick="transferToParaphraser()" title="Transfer input text directly to Multi-Mode Paraphraser">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><path d="M21.5 2v6h-6"/><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-1.19"/></svg>
+                  <span>Open in Paraphraser</span>
+                </button>
+                <button class="btn btn-primary" onclick="runAIDetectionScan()" title="Scan text for AI stylistic fingerprints">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+                  <span>Scan Fingerprint</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Analytics & Visualizer Panel -->
+          <div class="detector-analytics-card">
+            <!-- Metric Tiles -->
+            <!-- Prominent Verdict Hero Card (Immediate & Human) -->
+            <div class="verdict-hero-card" id="radar-verdict-card">
+              <div class="verdict-primary-col">
+                <div class="verdict-badge" id="metric-verdict-badge">
+                  <span class="verdict-beacon" id="verdict-beacon"></span>
+                  <span id="metric-verdict" class="verdict-title">Human-Written</span>
+                </div>
+                <div class="verdict-explanation" id="metric-risk">Zero AI Detection Risk • Natural Human Pacing</div>
+              </div>
+
+              <div class="verdict-metrics-group">
+                <div class="verdict-stat-pill" title="Probability of human authorship">
+                  <span class="stat-pill-label">Human Score</span>
+                  <span id="metric-human-prob" class="stat-pill-value">95.0%</span>
+                </div>
+                <div class="verdict-stat-pill" title="Sentence length variance across paragraphs">
+                  <span class="stat-pill-label">Cadence Variety</span>
+                  <span id="metric-burstiness" class="stat-pill-value">5.4 σ</span>
+                </div>
+                <div class="verdict-stat-pill" title="Lexical unpredictability and word choice entropy">
+                  <span class="stat-pill-label">Vocabulary Entropy</span>
+                  <span id="metric-perplexity" class="stat-pill-value">72.8</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Overlapping Distributions Graph -->
+            <div class="visualizer-box">
+              <div class="visualizer-header">
+                <div class="visualizer-titles">
+                  <h3>Probability Spectrum</h3>
+                  <span class="visualizer-subtext">Overlapping human vs synthetic feature distributions</span>
+                </div>
+                <div class="tradeoff-indicators">
+                  <span class="tradeoff-pill" id="fpr-badge">False Positive: 6%</span>
+                  <span class="tradeoff-pill" id="fnr-badge">False Negative: 4%</span>
+                </div>
+              </div>
+
+              <div class="canvas-viewport">
+                <canvas id="boundary-canvas" width="680" height="230"></canvas>
+              </div>
+
+              <!-- Interactive Decision Boundary Slider -->
+              <div class="boundary-slider-module">
+                <div class="slider-row">
+                  <label for="boundary-slider" class="slider-title">Sensitivity: <span id="boundary-value">50%</span></label>
+                  <span class="slider-hint">← Strict Academic | Standard | Relaxed →</span>
+                </div>
+                <input type="range" id="boundary-slider" min="15" max="85" value="50" oninput="updateDecisionBoundary(this.value)">
+              </div>
+            </div>
+
+            <!-- Sentence Length Rhythm Chart -->
+            <div class="rhythm-box">
+              <div class="rhythm-header">
+                <h3>Sentence Cadence Spectrum</h3>
+                <span class="rhythm-subtext">Words per sentence across the prose</span>
+              </div>
+              <div id="sentence-bars" class="rhythm-bars">
+                <span class="view-placeholder">Enter text to view cadence rhythm.</span>
+              </div>
+            </div>
+
+            <!-- Granular Sentence-by-Sentence AI Heatmap (Upgrade 3) -->
+            <div class="rhythm-box" style="margin-top: 14px;">
+              <div class="rhythm-header">
+                <h3>Sentence-Level AI Risk Heatmap</h3>
+                <span class="rhythm-subtext">Granular structural &amp; lexical triggers per sentence (GPTZero / Originality style)</span>
+              </div>
+              <div id="detector-sentence-heatmap" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <span class="view-placeholder">Scan prose to inspect sentence-by-sentence AI probability and exact triggers.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 4: HUMANIZER (DE-AI PROSE ENGINE)                     -->
+      <!-- ============================================================ -->
+      <section id="section-humanizer" class="tab-panel">
+        <div class="humanizer-shell">
+          <!-- Transformation Conduit Bar -->
+          <div class="conduit-bar" id="humanizer-conduit">
+            <div class="conduit-indicator">
+              <span class="conduit-node">AI Draft</span>
+              <span class="conduit-arrow">
+                <svg class="ui-svg xs" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+              <span class="conduit-node active">Human Prose</span>
+            </div>
+            <div class="conduit-telemetry">
+              <span class="telemetry-chip" id="humanize-score-chip">AI Tells: 0</span>
+              <span class="telemetry-chip safe" id="humanize-status-chip">0% Cliché Density</span>
+            </div>
+          </div>
+
+          <!-- Dual Surface: Input vs Output -->
+          <div class="dual-surface">
+            <!-- Source Column -->
+            <div class="surface-card drop-target" id="humanizer-surface">
+              <div class="surface-card-header">
+                <span class="card-title">AI Draft Under Cleanse</span>
+                <div class="surface-actions">
+                  <button class="action-btn" onclick="triggerFileInput('humanizer')">
+                    <svg class="ui-svg" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    <span>Import</span>
+                  </button>
+                  <button class="action-btn" onclick="loadSampleHumanizer()">
+                    <svg class="ui-svg" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-1 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                    <span>Sample AI Text</span>
+                  </button>
+                  <button class="action-btn" onclick="clearHumanizerInput()">
+                    <svg class="ui-svg" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+                    <span>Clear</span>
+                  </button>
+                  <button id="btn-revert-humanizer" class="action-btn revert-btn" onclick="revertHumanizerText()" style="display: none;">
+                    <svg class="ui-svg" viewBox="0 0 24 24"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
+                    <span>Revert</span>
+                  </button>
+                </div>
+              </div>
+              <textarea id="humanizer-input" spellcheck="false" placeholder="Paste an AI-generated draft (ChatGPT, Claude, Gemini) here to detect and purge formulaic phrases, dead-giveaway vocabulary (delve, tapestry, pivotal), and copula avoidance..."></textarea>
+              <div class="surface-card-footer">
+                <span class="shortcut-tip"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> to humanize</span>
+                <button class="btn btn-primary btn-lg" onclick="runHumanizer()">
+                  <svg class="ui-svg lg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <span>Humanize Prose</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Result Column -->
+            <div class="surface-card result-card">
+              <div class="surface-card-header">
+                <span class="card-title">Clean Human Prose</span>
+                <button class="btn btn-secondary btn-sm" onclick="copyHumanizerOutput()">
+                  <svg class="ui-svg" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  <span>Copy Result</span>
+                </button>
+              </div>
+              <div id="humanizer-output" class="diff-view" tabindex="0">
+                <span class="view-placeholder">Humanized prose will appear here with surgical changes highlighted...</span>
+              </div>
+              <div class="surface-card-footer meta-footer">
+                <div id="humanizer-risk-badge" class="risk-meter">
+                  <span class="status-dot safe"></span>
+                  <span id="humanizer-risk-text">Zero AI Clichés • Natural Human Tone</span>
+                </div>
+                <span id="humanizer-metrics" class="diff-counter">0 changes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adversarial Beam Candidates Rail (Upgrade 1) -->
+          <div class="candidates-rail" style="margin-bottom: 14px;">
+            <div class="candidates-header">
+              <div class="candidates-titles">
+                <h3>Closed-Loop Adversarial Beam Candidates</h3>
+                <span class="candidates-subtitle">Ranked by lowest AI detection probability and highest burstiness σ</span>
+              </div>
+            </div>
+            <div id="humanizer-beam-list" class="candidates-grid">
+              <div class="candidate-empty">Run Humanizer to compare ranked structural variations from the Adversarial Beam Search.</div>
+            </div>
+          </div>
+
+          <!-- Detected AI Patterns Rail -->
+          <div class="candidates-rail">
+            <div class="candidates-header">
+              <div class="candidates-titles">
+                <h3>Detected Synthetic Patterns & AI Buzzwords</h3>
+                <span class="candidates-subtitle">Surgically resolved using 28 AI syntax markers and 560+ term lexicon</span>
+              </div>
+            </div>
+            <div id="humanizer-findings-list" class="candidates-grid">
+              <div class="candidate-empty">Paste AI text and click "Humanize Prose" to view detected tells and surgical fixes.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile Ergonomic Bottom Navigation Dock -->
+    <nav class="mobile-bottom-dock" aria-label="Mobile Navigation">
+      <button id="mob-tab-grammar" class="mob-dock-btn active" onclick="switchTab('grammar')">
+        <svg class="ui-svg" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+        <span>Chisel</span>
+      </button>
+      <button id="mob-tab-paraphrase" class="mob-dock-btn" onclick="switchTab('paraphrase')">
+        <svg class="ui-svg" viewBox="0 0 24 24"><path d="M21.5 2v6h-6"/><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-1.19"/></svg>
+        <span>Morph</span>
+      </button>
+      <button id="mob-tab-detector" class="mob-dock-btn" onclick="switchTab('detector')">
+        <svg class="ui-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+        <span>Radar</span>
+      </button>
+      <button id="mob-tab-humanizer" class="mob-dock-btn" onclick="switchTab('humanizer')">
+        <svg class="ui-svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span>Humanizer</span>
+      </button>
+    </nav>
+
+    <!-- Command Palette (Spotlight / Raycast Style) -->
+    <div id="command-palette-backdrop" class="palette-backdrop" style="display: none;" onclick="handlePaletteBackdropClick(event)">
+      <div class="palette-modal" role="dialog" aria-modal="true" aria-label="Command Palette">
+        <div class="palette-header">
+          <svg class="ui-svg palette-search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="palette-input" class="palette-input" placeholder="Type a command, mode, or word to find synonyms..." autocomplete="off" spellcheck="false">
+          <kbd class="palette-esc-badge" onclick="closeCommandPalette()">ESC</kbd>
+        </div>
+        <div id="palette-results" class="palette-results" role="listbox"></div>
+        <div class="palette-footer">
+          <div class="palette-footer-hints">
+            <span class="hint-item"><kbd>↑</kbd> <kbd>↓</kbd> navigate</span>
+            <span class="hint-item"><kbd>↵</kbd> select</span>
+            <span class="hint-item"><kbd>esc</kbd> close</span>
+          </div>
+          <span class="palette-status" id="palette-status">20 commands available</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Global Floating Toast Container -->
+    <div id="toast-container" class="toast-shelf" aria-live="polite"></div>
+  </div>
+
+  <script src="engine_client.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

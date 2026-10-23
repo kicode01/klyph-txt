@@ -1,0 +1,49 @@
+{
+  "name": "klyph-txt — Autonomous Neurosymbolic Writing",
+  "short_name": "klyph-txt",
+  "description": "Zero-server, 100% deterministic writing engine with Chomsky AST tree paraphrasing, grammar precision, and anti-AI detection cadence.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "categories": ["productivity", "utilities", "education"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Klyph Editor",
+      "url": "/#grammar",
+      "description": "Instant grammar and style precision"
+    },
+    {
+      "name": "Klyph Paraphraser",
+      "url": "/#paraphrase",
+      "description": "Syntactic AST rephrasing with human cadence"
+    },
+    {
+      "name": "AI Spectrum",
+      "url": "/#detector",
+      "description": "GPTZero decision boundary simulator"
+    }
+  ]
+}

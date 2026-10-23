@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="icon-threads-title">
+  <title id="icon-threads-title">Klyph Responsive Icon - icon-threads</title>
+  <style>
+    .mode-light { display: none; }
+    .mode-dark  { display: block; }
+    @media (prefers-color-scheme: light) {
+      .mode-light { display: block; }
+      .mode-dark  { display: none; }
+    }
+  </style>
+  <g class="mode-dark">
+    <rect width="256"height="256" rx="64" fill="#080b10"/>
+  <!-- Continuous Fluid Ribbon Stroke -->
+  <path d="M 76 196 L 76 80 C 76 50 106 44 126 62 C 146 80 116 116 126 128 C 138 142 168 84 188 64 C 204 48 214 68 200 88 C 182 116 142 146 132 154 L 192 196" fill="none" stroke="#00f0ff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Embedded Golden Core -->
+  <circle cx="126" cy="128" r="9" fill="#f59e0b"/>
+  </g>
+  <g class="mode-light">
+    <rect width="256"height="256" rx="64" fill="#f8fafc" stroke="#e2e8f0" stroke-width="4"/>
+  <!-- Continuous Fluid Ribbon Stroke -->
+  <path d="M 76 196 L 76 80 C 76 50 106 44 126 62 C 146 80 116 116 126 128 C 138 142 168 84 188 64 C 204 48 214 68 200 88 C 182 116 142 146 132 154 L 192 196" fill="none" stroke="#0284c7" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Embedded Golden Core -->
+  <circle cx="126" cy="128" r="9" fill="#f59e0b"/>
+  </g>
+</svg>

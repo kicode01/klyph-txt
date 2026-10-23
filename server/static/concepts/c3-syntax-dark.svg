@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title">
+  <title id="title">Klyph Syntax Bracket Dark</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <path d="M102 110 L168 44 H208 L142 110 Z" fill="#00f0ff"/>
+  <path d="M142 146 L208 212 H168 L102 146 Z" fill="#00f0ff"/>
+  <polygon points="108,128 140,96 164,96 132,128 164,160 140,160" fill="#f59e0b"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="t1-title">
+  <title id="t1-title">Klyph Titan 1 - The Continuous Fluid Loop (Threads Pedigree)</title>
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Continuous Fluid Ribbon Loop -->
+  <path d="M 76 196 L 76 76 C 76 48 104 44 124 56 C 144 68 116 114 124 128 C 132 142 164 88 188 64 C 204 48 216 64 204 84 C 188 108 144 136 132 144 L 192 196" fill="none" stroke="#00f0ff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Luminous Amber Focal Core -->
+  <circle cx="124" cy="128" r="9" fill="#f59e0b"/>
+</svg>

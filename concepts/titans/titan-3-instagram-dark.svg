@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="t3-title">
+  <title id="t3-title">Klyph Titan 3 - The Distilled Aperture and Spark (Instagram Pedigree)</title>
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Iconic Outer Continuous Contour -->
+  <rect x="44" y="44" width="168" height="168" rx="46" fill="none" stroke="#00f0ff" stroke-width="18"/>
+  <!-- Central Concentric Editorial Aperture -->
+  <circle cx="128" cy="128" r="42" fill="none" stroke="#00f0ff" stroke-width="18"/>
+  <!-- Left Chisel Inset (Forming the subtle K ligature) -->
+  <rect x="76" y="80" width="16" height="96" rx="8" fill="#00f0ff"/>
+  <!-- Luminous Golden Spark (The Human/Editorial Focus) -->
+  <circle cx="178" cy="78" r="13" fill="#f59e0b"/>
+</svg>

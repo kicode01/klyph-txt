@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="r3-title">
+  <title id="r3-title">Klyph Refined 3 - The Dimensional Editorial Prism</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Front vertical foundation pillar -->
+  <rect x="52" y="44" width="36" height="168" rx="8" fill="#00f0ff"/>
+  <!-- Upper fold blade: pure cyan -->
+  <polygon points="100,128 176,52 216,52 140,128" fill="#00f0ff"/>
+  <!-- Lower foundation facet: deeper lapis tone creating physical depth -->
+  <polygon points="120,116 196,192 160,192 96,128" fill="#0284c7"/>
+  <!-- Central golden amber keystone hinge -->
+  <polygon points="100,128 124,104 148,128 124,152" fill="#f59e0b"/>
+</svg>

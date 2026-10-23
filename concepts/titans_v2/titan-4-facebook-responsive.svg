@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="titan-4-facebook-title">
+  <title id="titan-4-facebook-title">Klyph Responsive Icon - titan-4-facebook</title>
+  <style>
+    .mode-light { display: none; }
+    .mode-dark  { display: block; }
+    @media (prefers-color-scheme: light) {
+      .mode-light { display: block; }
+      .mode-dark  { display: none; }
+    }
+  </style>
+  <g class="mode-dark">
+    <rect width="256"height="256" rx="64" fill="#080b10"/>
+  <!-- Grounded Foundation Pillar (Asymmetric, Heavyweight) -->
+  <rect x="52" y="38" width="42" height="182" rx="10" fill="#00f0ff"/>
+  <!-- Upper Soaring 45-deg Blade -->
+  <path d="M 104 128 L 180 52 H 220 L 144 128 Z" fill="#00f0ff"/>
+  <!-- Lower Grounded 45-deg Anchor Leg -->
+  <path d="M 144 128 L 220 204 H 180 L 104 128 Z" fill="#00f0ff"/>
+  <!-- Luminous Amber Keystone Nexus -->
+  <polygon points="104,128 124,108 144,128 124,148" fill="#f59e0b"/>
+  </g>
+  <g class="mode-light">
+    <rect width="256"height="256" rx="64" fill="#0284c7" stroke="#0369a1" stroke-width="4"/>
+  <!-- Grounded Foundation Pillar (Asymmetric, Heavyweight) -->
+  <rect x="52" y="38" width="42" height="182" rx="10" fill="#ffffff"/>
+  <!-- Upper Soaring 45-deg Blade -->
+  <path d="M 104 128 L 180 52 H 220 L 144 128 Z" fill="#ffffff"/>
+  <!-- Lower Grounded 45-deg Anchor Leg -->
+  <path d="M 144 128 L 220 204 H 180 L 104 128 Z" fill="#ffffff"/>
+  <!-- Luminous Amber Keystone Nexus -->
+  <polygon points="104,128 124,108 144,128 124,148" fill="#f59e0b"/>
+  </g>
+</svg>

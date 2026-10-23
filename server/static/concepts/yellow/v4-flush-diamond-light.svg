@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="64" fill="#0284c7" stroke="#0369a1" stroke-width="4"/>
+  <!-- Base Grounded K -->
+  <path d="M 54 44 H 96 V 114 L 166 44 H 216 L 132 128 L 220 216 H 170 L 96 142 V 216 H 54 Z" fill="#ffffff"/>
+  <!-- Large Flush Yellow Keystone (Filling the entire junction) -->
+  <polygon points="96,128 128,96 160,128 128,160" fill="#f59e0b"/>
+</svg>

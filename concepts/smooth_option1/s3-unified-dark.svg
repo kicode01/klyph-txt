@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Unified Smooth K Path -->
+  <path d="M 54 58 C 54 50 60 44 68 44 H 82 C 90 44 96 50 96 58 V 104 L 160 48 C 166 44 174 44 182 44 H 204 C 214 44 218 50 214 58 L 138 128 L 214 198 C 218 206 214 216 204 216 H 182 C 174 216 166 216 160 212 L 96 152 V 202 C 96 210 90 216 82 216 H 68 C 60 216 54 210 54 202 Z" fill="#00f0ff"/>
+  <!-- Yellow Smooth Inner Wedge (Rounded Apex) -->
+  <path d="M 96 100 L 122 126 C 124 128 124 130 122 132 L 96 158 Z" fill="#f59e0b" stroke="#f59e0b" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

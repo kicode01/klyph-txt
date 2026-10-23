@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title">
+  <title id="title">Klyph Optical Caliper Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#0284c7"/>
+  <path d="M96 134 L176 54 H216 L144 126 Z" fill="#0284c7"/>
+  <path d="M144 130 L216 202 H176 L96 122 Z" fill="#0284c7"/>
+  <path fill-rule="evenodd" d="M164 106 A22 22 0 1 0 164 150 A22 22 0 1 0 164 106 Z M164 118 A10 10 0 1 1 164 138 A10 10 0 1 1 164 118 Z" fill="#d97706"/>
+</svg>

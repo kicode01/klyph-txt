@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="t4-title">
+  <title id="t4-title">Klyph Titan 4 - The Monumental Asymmetric Monogram (Facebook Pedigree)</title>
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Grounded Foundation Pillar (Bleeds close to lower contour) -->
+  <rect x="52" y="36" width="40" height="184" rx="10" fill="#00f0ff"/>
+  <!-- Upper Humanist Curving Blade -->
+  <path d="M 104 136 C 116 112 152 68 184 52 L 208 64 C 184 88 140 134 132 144 Z" fill="#00f0ff"/>
+  <!-- Lower Authority Kick (Grounded) -->
+  <path d="M 118 126 L 198 212 L 160 216 L 98 144 Z" fill="#00f0ff"/>
+  <!-- Interlocking Amber Keystone -->
+  <polygon points="102,136 122,116 142,136 122,156" fill="#f59e0b"/>
+</svg>

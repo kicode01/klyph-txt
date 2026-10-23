@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- White Foundation Pillar -->
+  <rect x="54" y="44" width="42" height="172" rx="0" fill="#00f0ff"/>
+  <!-- Yellow Soaring Diagonals -->
+  <path d="M 96 114 L 166 44 H 216 L 132 128 L 220 216 H 170 L 96 142 Z" fill="#f59e0b"/>
+  <!-- Keystone Diamond -->
+  <polygon points="96,128 114,110 132,128 114,146" fill="#00f0ff"/>
+</svg>

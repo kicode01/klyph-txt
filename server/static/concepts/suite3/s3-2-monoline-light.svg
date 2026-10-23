@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="s32-title">
+  <title id="s32-title">Klyph S3 - The Continuous Monoline Loop Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <rect x="52" y="44" width="32" height="168" rx="16" fill="#0284c7"/>
+  <path d="M100 128 L176 52 H212 L136 128 Z" fill="#0284c7"/>
+  <path d="M136 128 L212 204 H176 L100 128 Z" fill="#0284c7"/>
+  <circle cx="118" cy="128" r="16" fill="#d97706"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Entire Letter K Filled with Yellow -->
+  <path d="M 54 44 H 96 V 114 L 166 44 H 216 L 132 128 L 220 216 H 170 L 96 142 V 216 H 54 Z" fill="#f59e0b"/>
+  <!-- White Inset Core Jewel -->
+  <polygon points="96,128 114,110 132,128 114,146" fill="#ffffff"/>
+</svg>

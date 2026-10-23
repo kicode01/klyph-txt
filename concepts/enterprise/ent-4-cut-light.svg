@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="e4-title">
+  <title id="e4-title">Klyph Enterprise 4 - The Minimalist Glyphic Cut Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <path d="M48 48 H96 V208 H48 Z" fill="#0284c7"/>
+  <polygon points="112,48 208,48 112,144" fill="#0284c7"/>
+  <polygon points="112,112 208,208 112,208" fill="#0284c7"/>
+  <rect x="100" y="116" width="24" height="24" rx="4" fill="#d97706"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="cb-title">
+  <title id="cb-title">Klyph Concept B - The Editorial Feather Quill</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Central quill shaft angled at 45 deg -->
+  <path d="M72 196 L196 72 L184 60 L60 184 Z" fill="#00f0ff"/>
+  <!-- Upper feather vane / upper K arm -->
+  <path d="M116 116 L160 72 H200 L140 132 Z" fill="#00f0ff"/>
+  <!-- Lower feather vane / lower K arm -->
+  <path d="M136 136 L196 196 H156 L112 152 Z" fill="#00f0ff"/>
+  <!-- Golden ink nib / writing tip -->
+  <polygon points="60,184 72,196 52,216 40,204" fill="#f59e0b"/>
+</svg>

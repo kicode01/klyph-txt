@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="k-cleave-title">
+  <title id="k-cleave-title">Klyph Cleave - The K is carved with two clean chisel strokes</title>
+  <!-- Left Pillar -->
+  <rect x="52" y="44" width="40" height="168" rx="12" fill="#0f172a"/>
+  <!-- Upper Chisel Blade (Exact 45 deg: dx=66, dy=66) -->
+  <path d="M 102 116 L 168 50 C 172 46 180 44 190 44 H 210 C 218 44 222 50 218 58 L 148 128 Z" fill="#0f172a"/>
+  <!-- Lower Chisel Blade (Exact 45 deg: dx=70, dy=70) -->
+  <path d="M 148 128 L 218 198 C 222 206 218 212 210 212 H 190 C 180 212 172 210 168 206 L 102 140 Z" fill="#0f172a"/>
+  <!-- Luminous Keystone Wedge (Exact 45 deg) -->
+  <polygon points="102,96 134,128 102,160" fill="#f59e0b"/>
+</svg>

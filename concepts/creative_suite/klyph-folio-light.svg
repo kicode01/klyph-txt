@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="k-fol-l">
+  <title id="k-fol-l">Klyph Folio - Every edit turns the page</title>
+  <!-- Spine Margin Rule -->
+  <rect x="52" y="44" width="36" height="168" rx="10" fill="#065f46"/>
+  <!-- Upper Folded Leaf (Dog-Ear Corner) -->
+  <path d="M 98 124 L 174 48 C 178 44 186 44 196 44 H 210 C 218 44 220 52 214 58 L 144 128 Z" fill="#10b981"/>
+  <!-- Lower Unfolding Leaf -->
+  <path d="M 144 128 L 214 198 C 220 204 218 212 210 212 H 196 C 186 212 178 212 174 208 L 98 132 Z" fill="#047857"/>
+  <!-- Golden Bookmark Ribbon Peak -->
+  <polygon points="98,104 122,128 98,152" fill="#f59e0b"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="ref-1-chisel-master-title">
+  <title id="ref-1-chisel-master-title">Klyph The Architectural Chisel (Master)</title>
+  <style>
+    :root {
+      --klyph-base: #080b10;
+      --klyph-glyph: #00f0ff;
+      --klyph-keystone: #f59e0b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --klyph-base: #fbfaf6;
+        --klyph-glyph: #0284c7;
+        --klyph-keystone: #d97706;
+      }
+    }
+    .klyph-base { fill: var(--klyph-base); }
+    .klyph-glyph { fill: var(--klyph-glyph); }
+    .klyph-keystone { fill: var(--klyph-keystone); }
+  </style>
+<rect width="256" height="256" rx="60" class="klyph-base"/>
+  <!-- Vertical foundation pillar -->
+  <rect x="48" y="40" width="38" height="176" rx="8" class="klyph-glyph"/>
+  <!-- Upper 45-deg chisel blade -->
+  <path d="M104 128 L180 52 H216 L136 132 Z" class="klyph-glyph"/>
+  <!-- Lower 45-deg foundation blade -->
+  <path d="M136 124 L216 204 H180 L104 128 Z" class="klyph-glyph"/>
+  <!-- Interlocking golden keystone diamond -->
+  <polygon points="104,128 126,106 148,128 126,150" class="klyph-keystone"/>
+</svg>

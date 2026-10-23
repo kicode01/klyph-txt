@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="titan-2-tiktok-title">
+  <title id="titan-2-tiktok-title">Klyph Responsive Icon - titan-2-tiktok</title>
+  <style>
+    .mode-light { display: none; }
+    .mode-dark  { display: block; }
+    @media (prefers-color-scheme: light) {
+      .mode-light { display: block; }
+      .mode-dark  { display: none; }
+    }
+  </style>
+  <g class="mode-dark">
+    <rect width="256"height="256" rx="64" fill="#080b10"/>
+  <!-- Cyan Chromatic Underlayer (Shifted -4px, +3px) -->
+  <g transform="translate(-4, 3)" fill="#00f0ff" opacity="0.85">
+    <path d="M 64 48 L 98 48 L 84 208 L 50 208 Z M 106 130 L 176 52 L 214 52 L 134 140 Z M 126 124 L 206 208 L 168 208 L 98 134 Z"/>
+  </g>
+  <!-- Coral Chromatic Overlayer (Shifted +4px, -3px) -->
+  <g transform="translate(4, -3)" fill="#ff0055" opacity="0.85">
+    <path d="M 64 48 L 98 48 L 84 208 L 50 208 Z M 106 130 L 176 52 L 214 52 L 134 140 Z M 126 124 L 206 208 L 168 208 L 98 134 Z"/>
+  </g>
+  <!-- Brilliant Core Anchor -->
+  <g fill="#ffffff">
+    <path d="M 64 48 L 98 48 L 84 208 L 50 208 Z M 106 130 L 176 52 L 214 52 L 134 140 Z M 126 124 L 206 208 L 168 208 L 98 134 Z"/>
+  </g>
+  <!-- Central Pulse Nucleus -->
+  <polygon points="106,130 120,116 134,130 120,144" fill="#f59e0b"/>
+  </g>
+  <g class="mode-light">
+    <rect width="256"height="256" rx="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="4"/>
+  <!-- Cyan Chromatic Underlayer (Shifted -4px, +3px) -->
+  <g transform="translate(-4, 3)" fill="#00f0ff" opacity="0.85">
+    <path d="M 64 48 L 98 48 L 84 208 L 50 208 Z M 106 130 L 176 52 L 214 52 L 134 140 Z M 126 124 L 206 208 L 168 208 L 98 134 Z"/>
+  </g>
+  <!-- Coral Chromatic Overlayer (Shifted +4px, -3px) -->
+  <g transform="translate(4, -3)" fill="#f43f5e" opacity="0.85">
+    <path d="M 64 48 L 98 48 L 84 208 L 50 208 Z M 106 130 L 176 52 L 214 52 L 134 140 Z M 126 124 L 206 208 L 168 208 L 98 134 Z"/>
+  </g>
+  <!-- Brilliant Core Anchor -->
+  <g fill="#0f172a">
+    <path d="M 64 48 L 98 48 L 84 208 L 50 208 Z M 106 130 L 176 52 L 214 52 L 134 140 Z M 126 124 L 206 208 L 168 208 L 98 134 Z"/>
+  </g>
+  <!-- Central Pulse Nucleus -->
+  <polygon points="106,130 120,116 134,130 120,144" fill="#f59e0b"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="r2-title">
+  <title id="r2-title">Klyph Redesign 2 - The Aerodynamic Quill Wing Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <path d="M72 184 C92 144 132 88 208 48 C188 88 176 132 172 164 L120 112 Z" fill="#0284c7"/>
+  <path d="M64 192 L120 136 L164 180 C140 200 112 212 80 216 Z" fill="#0369a1"/>
+  <polygon points="56,200 72,184 64,192 48,208" fill="#d97706"/>
+  <circle cx="120" cy="124" r="10" fill="#d97706"/>
+</svg>

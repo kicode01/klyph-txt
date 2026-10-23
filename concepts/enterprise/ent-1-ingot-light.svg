@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="e1-title">
+  <title id="e1-title">Klyph Enterprise 1 - The Monolith Ingot Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <rect x="52" y="44" width="36" height="168" rx="8" fill="#0284c7"/>
+  <path d="M108 120 L184 44 H220 L144 120 Z" fill="#0284c7"/>
+  <path d="M144 136 L220 212 H184 L108 136 Z" fill="#0284c7"/>
+  <polygon points="120,116 132,128 120,140 108,128" fill="#d97706"/>
+</svg>

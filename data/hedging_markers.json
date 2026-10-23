@@ -1,0 +1,18 @@
+{
+  "hedging_substitutions": {
+    "proves that": "suggests that",
+    "clearly proves": "strongly indicates",
+    "is definitely": "appears to be",
+    "will definitely": "is anticipated to",
+    "always results in": "consistently correlates with",
+    "it is obvious that": "evidence indicates that",
+    "without a doubt": "substantially",
+    "unquestionably": "plausibly",
+    "cannot be disputed": "is supported by strong consensus",
+    "perfect solution": "viable alternative",
+    "everyone knows that": "scholarly consensus observes that",
+    "there is no question": "compelling evidence suggests",
+    "completely impossible": "improbable under current parameters",
+    "absolute fact": "well-documented observation"
+  }
+}

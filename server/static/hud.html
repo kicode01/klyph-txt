@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="slate">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>klyph-txt HUD | Ambient Companion</title>
+  
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hud.css">
+</head>
+<body>
+  <div class="hud-container">
+    <!-- Top HUD Navigation / Bar -->
+    <header class="hud-header">
+      <div class="hud-brand">
+        <img src="icon.svg" alt="klyph-txt" class="hud-logo" width="22" height="22">
+        <span class="hud-title">klyph-txt <span class="hud-badge">HUD</span></span>
+      </div>
+
+      <div class="hud-controls">
+        <button id="btn-watch-clipboard" class="hud-btn-toggle" onclick="toggleClipboardWatcher()" title="Auto-inspect copied text (Hotkey: W)">
+          <span class="watcher-dot" id="watcher-dot"></span>
+          <span class="watcher-label" id="watcher-label">Clipboard: Off</span>
+        </button>
+
+        <button id="btn-hud-theme" class="hud-icon-btn" onclick="toggleTheme()" title="Toggle Theme (Warm Paper / Twilight Slate)">
+          <svg class="hud-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Score & Telemetry Header -->
+    <section class="hud-score-card">
+      <div class="hud-score-row">
+        <div class="hud-score-left">
+          <div class="score-circle-outer" id="score-circle">
+            <span class="score-val" id="hud-score-value">100</span>
+            <span class="score-denom">/100</span>
+          </div>
+          <div class="score-meta">
+            <h2 class="score-title" id="hud-score-title">Writing Pristine</h2>
+            <p class="score-subtitle" id="hud-score-subtitle">Deterministic symbolic inspection active</p>
+          </div>
+        </div>
+
+        <div class="hud-status-badge" id="hud-ai-badge">
+          <span class="ai-badge-dot"></span>
+          <span id="hud-ai-label">100% Human</span>
+        </div>
+      </div>
+
+      <!-- Linear Quality Progress Bar -->
+      <div class="hud-score-track">
+        <div class="hud-score-fill" id="hud-score-fill" style="width: 100%;"></div>
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="hud-telemetry-ribbon">
+        <div class="telemetry-pill" id="pill-issues" title="Grammar, spelling & style issues">
+          <span class="pill-dot ruby-dot"></span>
+          <span id="hud-issues-count">0 Issues</span>
+        </div>
+        <div class="telemetry-pill" id="pill-habits" title="Detected macro habit clusters">
+          <span class="pill-dot cyan-dot"></span>
+          <span id="hud-habits-count">0 Habits</span>
+        </div>
+        <div class="telemetry-pill" id="pill-words" title="Document word count">
+          <span class="pill-dot iris-dot"></span>
+          <span id="hud-words-count">0 Words</span>
+        </div>
+        <div class="telemetry-pill" id="pill-time" title="Estimated reading time">
+          <span id="hud-reading-time">0s read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- View Switcher: Original vs Diff Preview -->
+    <div class="hud-view-tabs">
+      <button id="tab-btn-editor" class="hud-view-tab active" onclick="switchHUDView('editor')">
+        <span>Input Buffer</span>
+      </button>
+      <button id="tab-btn-diff" class="hud-view-tab" onclick="switchHUDView('diff')">
+        <span>Precision Diff</span>
+        <span class="diff-badge" id="hud-diff-count" style="display: none;">0</span>
+      </button>
+      <button id="btn-paste-clipboard" class="hud-btn-paste" onclick="pasteFromClipboard()" title="Paste from Clipboard">
+        <svg class="hud-svg" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
+        <span>Paste</span>
+      </button>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="hud-content">
+      <!-- Input View -->
+      <div id="hud-view-editor" class="hud-panel active">
+        <textarea 
+          id="hud-input" 
+          class="hud-textarea" 
+          placeholder="Paste, type, or copy text anywhere to inspect in real time..." 
+          spellcheck="false"
+          autofocus
+        ></textarea>
+      </div>
+
+      <!-- Diff Preview View -->
+      <div id="hud-view-diff" class="hud-panel">
+        <div id="hud-diff-box" class="hud-diff-content">
+          <span class="diff-placeholder">No corrections needed. Input text is clear and accurate.</span>
+        </div>
+      </div>
+
+      <!-- Top Detected Habits Mini Bar -->
+      <div class="hud-habits-bar" id="hud-habits-bar" style="display: none;">
+        <span class="habits-bar-label">Habits:</span>
+        <div class="habits-bar-list" id="hud-habits-list"></div>
+      </div>
+    </main>
+
+    <!-- Interactive Actions Bar -->
+    <footer class="hud-footer">
+      <div class="hud-action-buttons">
+        <button id="btn-hud-fix-all" class="hud-action-btn btn-primary" onclick="applyQuickFixAndCopy()" title="Fix all issues and copy to clipboard (Enter)">
+          <svg class="hud-svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span class="action-btn-text">Fix All & Copy</span>
+          <kbd class="hud-kbd">Enter</kbd>
+        </button>
+
+        <button id="btn-hud-humanize" class="hud-action-btn btn-amber" onclick="applyHumanizeAndCopy()" title="De-AI Humanize and copy (H)">
+          <svg class="hud-svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span class="action-btn-text">De-AI & Copy</span>
+          <kbd class="hud-kbd">H</kbd>
+        </button>
+
+        <button id="btn-hud-studio" class="hud-action-btn btn-secondary" onclick="openFullStudio()" title="Open full klyph-txt (O)">
+          <svg class="hud-svg" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <span class="action-btn-text">klyph-txt</span>
+          <kbd class="hud-kbd">O</kbd>
+        </button>
+      </div>
+
+      <!-- Keyboard Shortcuts Help -->
+      <div class="hud-shortcuts-bar">
+        <span><kbd>Enter</kbd> Fix & Copy</span>
+        <span><kbd>H</kbd> De-AI</span>
+        <span><kbd>O</kbd> Studio</span>
+        <span><kbd>W</kbd> Watch</span>
+        <span><kbd>Esc</kbd> Clear</span>
+      </div>
+    </footer>
+
+    <!-- Toast Notification Banner -->
+    <div id="hud-toast" class="hud-toast" style="display: none;">
+      <span id="hud-toast-icon">✓</span>
+      <span id="hud-toast-msg">Text copied to clipboard</span>
+    </div>
+  </div>
+
+  <script src="engine_client.js"></script>
+  <script src="hud.js"></script>
+</body>
+</html>

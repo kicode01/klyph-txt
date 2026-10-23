@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="mc-title">
+  <title id="mc-title">Klyph Masterclass C - Continuous Ribbon K (Threads Pedigree)</title>
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Continuous Vertical Stem -->
+  <rect x="56" y="44" width="32" height="168" rx="16" fill="#00f0ff"/>
+  <!-- Upper Diagonal Ribbon -->
+  <path d="M 88 128 L 176 48" stroke="#00f0ff" stroke-width="32" stroke-linecap="round"/>
+  <!-- Lower Diagonal Ribbon -->
+  <path d="M 112 128 L 184 208" stroke="#00f0ff" stroke-width="32" stroke-linecap="round"/>
+  <!-- Golden Keystone Hinge -->
+  <circle cx="108" cy="128" r="12" fill="#f59e0b"/>
+</svg>

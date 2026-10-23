@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="r4-title">
+  <title id="r4-title">Klyph Redesign 4 - The Keystones Pinwheel Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <polygon points="128,44 156,72 128,100 100,72" fill="#0284c7"/>
+  <polygon points="212,128 184,156 156,128 184,100" fill="#0284c7"/>
+  <polygon points="128,212 100,184 128,156 156,184" fill="#0284c7"/>
+  <polygon points="44,128 72,100 100,128 72,156" fill="#0284c7"/>
+  <polygon points="128,112 144,128 128,144 112,128" fill="#d97706"/>
+</svg>

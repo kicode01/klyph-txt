@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="icon-instagram-title">
+  <title id="icon-instagram-title">Klyph Responsive Icon - icon-instagram</title>
+  <style>
+    .mode-light { display: none; }
+    .mode-dark  { display: block; }
+    @media (prefers-color-scheme: light) {
+      .mode-light { display: block; }
+      .mode-dark  { display: none; }
+    }
+  </style>
+  <g class="mode-dark">
+    <rect width="256"height="256" rx="64" fill="#080b10"/>
+  <!-- Outer Minimalist Squircle Boundary -->
+  <rect x="42" y="42" width="172" height="172" rx="48" fill="none" stroke="#00f0ff" stroke-width="18"/>
+  <!-- Concentric Editorial Aperture Lens -->
+  <circle cx="128" cy="128" r="46" fill="none" stroke="#00f0ff" stroke-width="18"/>
+  <!-- Internal 45-deg Chisel Notch (Editorial Chevron) -->
+  <path d="M 128 128 L 156 100 M 128 128 L 156 156" fill="none" stroke="#00f0ff" stroke-width="16" stroke-linecap="round"/>
+  <!-- Radiant Golden Spark (Human Insight & Clarity) -->
+  <circle cx="180" cy="76" r="14" fill="#f59e0b"/>
+  </g>
+  <g class="mode-light">
+    <rect width="256"height="256" rx="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="4"/>
+  <!-- Outer Minimalist Squircle Boundary -->
+  <rect x="42" y="42" width="172" height="172" rx="48" fill="none" stroke="#0284c7" stroke-width="18"/>
+  <!-- Concentric Editorial Aperture Lens -->
+  <circle cx="128" cy="128" r="46" fill="none" stroke="#0284c7" stroke-width="18"/>
+  <!-- Internal 45-deg Chisel Notch (Editorial Chevron) -->
+  <path d="M 128 128 L 156 100 M 128 128 L 156 156" fill="none" stroke="#0284c7" stroke-width="16" stroke-linecap="round"/>
+  <!-- Radiant Golden Spark (Human Insight & Clarity) -->
+  <circle cx="180" cy="76" r="14" fill="#f59e0b"/>
+  </g>
+</svg>

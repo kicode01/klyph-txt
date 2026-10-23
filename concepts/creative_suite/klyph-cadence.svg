@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="k-cadence-title">
+  <title id="k-cadence-title">Klyph Cadence - One unbroken stroke of human cadence</title>
+  <!-- Single Continuous Flowing Ribbon -->
+  <path d="M 72 212 L 72 74 C 72 50 96 44 116 64 L 132 80 C 144 92 162 74 176 60 C 190 46 212 56 204 74 L 148 130 L 206 188 C 214 196 206 208 194 208 C 186 208 178 204 172 198 L 128 154 L 102 180 C 86 196 72 212 72 212 Z" fill="#4f46e5"/>
+  <!-- Center Heart Pulse Node -->
+  <circle cx="118" cy="128" r="10" fill="#f59e0b"/>
+</svg>

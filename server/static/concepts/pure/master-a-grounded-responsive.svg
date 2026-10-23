@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="master-a-grounded-title">
+  <title id="master-a-grounded-title">Klyph Responsive Icon - master-a-grounded</title>
+  <style>
+    .mode-light { display: none; }
+    .mode-dark  { display: block; }
+    @media (prefers-color-scheme: light) {
+      .mode-light { display: block; }
+      .mode-dark  { display: none; }
+    }
+  </style>
+  <g class="mode-dark">
+    <rect width="256"height="256" rx="64" fill="#080b10"/>
+  <!-- Unified Monogram Silhouette -->
+  <path d="M 54 44 H 96 V 110 L 156 44 H 208 L 132 126 L 212 216 H 158 L 96 144 V 216 H 54 Z" fill="#00f0ff"/>
+  <!-- Luminous Amber Keystone Nexus -->
+  <polygon points="96,128 114,110 132,128 114,146" fill="#f59e0b"/>
+  </g>
+  <g class="mode-light">
+    <rect width="256"height="256" rx="64" fill="#0284c7" stroke="#0369a1" stroke-width="4"/>
+  <!-- Unified Monogram Silhouette -->
+  <path d="M 54 44 H 96 V 110 L 156 44 H 208 L 132 126 L 212 216 H 158 L 96 144 V 216 H 54 Z" fill="#ffffff"/>
+  <!-- Luminous Amber Keystone Nexus -->
+  <polygon points="96,128 114,110 132,128 114,146" fill="#f59e0b"/>
+  </g>
+</svg>

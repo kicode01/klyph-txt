@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="t2-title">
+  <title id="t2-title">Klyph Tier 1 - The Editorial Cadence Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <rect x="52" y="44" width="32" height="168" rx="6" fill="#0284c7"/>
+  <path d="M104 128 L180 52 H216 L140 128 Z" fill="#0284c7"/>
+  <path d="M140 128 L216 204 H180 L104 128 Z" fill="#0284c7"/>
+  <rect x="92" y="114" width="28" height="28" rx="6" fill="#d97706"/>
+</svg>

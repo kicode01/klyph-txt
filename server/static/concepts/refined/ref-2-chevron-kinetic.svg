@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="r2-title">
+  <title id="r2-title">Klyph Refined 2 - The Continuous Kinetic Chevron</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Vertical pillar with subtle 45-deg beveled terminals -->
+  <path d="M52 52 L60 44 H88 V212 H60 L52 204 Z" fill="#00f0ff"/>
+  <!-- Continuous 45-deg chevron prism -->
+  <path d="M112 128 L188 52 H220 L144 128 L220 204 H188 Z" fill="#00f0ff"/>
+  <!-- Inset golden amber keystone eye -->
+  <polygon points="120,116 132,128 120,140 108,128" fill="#f59e0b"/>
+</svg>

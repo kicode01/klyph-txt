@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="c6-editorial-check-title">
+  <title id="c6-editorial-check-title">Klyph Responsive Icon - c6-editorial-check</title>
+  <style>
+    .mode-light { display: none; }
+    .mode-dark  { display: block; }
+    @media (prefers-color-scheme: light) {
+      .mode-light { display: block; }
+      .mode-dark  { display: none; }
+    }
+  </style>
+  <g class="mode-dark">
+    <rect width="256"height="256" rx="64" fill="#080b10"/>
+  <!-- Continuous Proofreader's Sweep into 45-deg Chisel Check -->
+  <path d="M 128 52 A 76 76 0 1 0 204 128 H 156 A 28 28 0 1 1 128 100 L 184 44 Z" fill="#00f0ff"/>
+  <!-- Radiant Golden Focus Point -->
+  <polygon points="128,100 136,108 128,116 120,108" fill="#f59e0b"/>
+  </g>
+  <g class="mode-light">
+    <rect width="256"height="256" rx="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="4"/>
+  <!-- Continuous Proofreader's Sweep into 45-deg Chisel Check -->
+  <path d="M 128 52 A 76 76 0 1 0 204 128 H 156 A 28 28 0 1 1 128 100 L 184 44 Z" fill="#0284c7"/>
+  <!-- Radiant Golden Focus Point -->
+  <polygon points="128,100 136,108 128,116 120,108" fill="#f59e0b"/>
+  </g>
+</svg>

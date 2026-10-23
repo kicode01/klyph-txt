@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="cd-title">
+  <title id="cd-title">Klyph Concept D - The Glyphic Medallion</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Solid cyan stone medallion -->
+  <circle cx="128" cy="128" r="88" fill="#00f0ff"/>
+  <!-- Incised negative-space vertical channel -->
+  <rect x="80" y="56" width="28" height="144" rx="4" fill="#080b10"/>
+  <!-- Incised negative-space upper diagonal channel -->
+  <path d="M116 132 L172 76 H196 L132 140 Z" fill="#080b10"/>
+  <!-- Incised negative-space lower diagonal channel -->
+  <path d="M132 116 L196 180 H172 L116 124 Z" fill="#080b10"/>
+  <!-- Inset golden keystone jewel -->
+  <polygon points="120,114 134,128 120,142 106,128" fill="#f59e0b"/>
+</svg>

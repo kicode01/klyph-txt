@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="e3-title">
+  <title id="e3-title">Klyph Enterprise 3 - The Neural Aperture</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Left stem: aerodynamic vertical blade -->
+  <rect x="52" y="44" width="36" height="168" rx="8" fill="#00f0ff"/>
+  <!-- Upper blade: 45-deg aerodynamic wing -->
+  <path d="M104 120 L180 44 H216 L140 120 Z" fill="#00f0ff"/>
+  <!-- Lower blade: 45-deg grounding stabilizer -->
+  <path d="M140 136 L216 212 H180 L104 136 Z" fill="#00f0ff"/>
+  <!-- Central golden circular aperture / parse nucleus -->
+  <circle cx="122" cy="128" r="16" fill="#f59e0b"/>
+</svg>

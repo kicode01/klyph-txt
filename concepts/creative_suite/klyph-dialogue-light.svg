@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="k-dlg-l">
+  <title id="k-dlg-l">Klyph Dialogue - Two quotes snap into a K</title>
+  <!-- Margin Foundation Bar -->
+  <rect x="50" y="44" width="38" height="168" rx="14" fill="#0f172a"/>
+  <!-- Upper Quote Chevron Blade -->
+  <path d="M 120 120 L 186 54 C 192 48 202 46 210 48 C 218 50 220 56 214 62 L 148 128 Z" fill="#e11d48"/>
+  <!-- Lower Quote Chevron Blade -->
+  <path d="M 148 128 L 214 194 C 220 200 218 206 210 208 C 202 210 192 208 186 202 L 120 136 Z" fill="#e11d48"/>
+  <!-- Punctuation Speech Node Core -->
+  <circle cx="106" cy="128" r="12" fill="#f59e0b"/>
+</svg>

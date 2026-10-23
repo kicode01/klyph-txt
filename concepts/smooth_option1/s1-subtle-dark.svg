@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Grounded Vertical Stem with Rounded Top -->
+  <rect x="54" y="44" width="42" height="172" rx="10" fill="#00f0ff"/>
+  <!-- Upper 45-deg Arm with Rounded Outer Terminal -->
+  <path d="M 96 114 L 164 46 C 168 44 172 44 176 44 H 210 C 216 44 220 48 218 54 L 136 132 Z" fill="#00f0ff"/>
+  <!-- Lower 45-deg Arm with Rounded Outer Terminal -->
+  <path d="M 136 124 L 218 206 C 220 212 216 216 210 216 H 176 C 172 216 168 216 164 214 L 96 142 Z" fill="#00f0ff"/>
+  <!-- Yellow Inner Wedge with Smooth Rounded Corners -->
+  <path d="M 96 96 L 126 126 C 128 128 128 130 126 132 L 96 162 Z" fill="#f59e0b" stroke="#f59e0b" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="master-d-stencil-title">
+  <title id="master-d-stencil-title">Klyph Responsive Icon - master-d-stencil</title>
+  <style>
+    .mode-light { display: none; }
+    .mode-dark  { display: block; }
+    @media (prefers-color-scheme: light) {
+      .mode-light { display: block; }
+      .mode-dark  { display: none; }
+    }
+  </style>
+  <g class="mode-dark">
+    <rect width="256"height="256" rx="64" fill="#080b10"/>
+  <!-- Solid Cyan Medallion Disc -->
+  <circle cx="128" cy="128" r="84" fill="#00f0ff"/>
+  <!-- Negative Space Vertical Pillar Cut -->
+  <rect x="76" y="56" width="28" height="144" rx="6" fill="#080b10"/>
+  <!-- Negative Space Upper Diagonal Cut -->
+  <polygon points="112,132 168,76 196,76 132,140" fill="#080b10"/>
+  <!-- Negative Space Lower Diagonal Cut -->
+  <polygon points="132,116 196,180 168,180 112,124" fill="#080b10"/>
+  <!-- Inset Golden Amber Jewel -->
+  <polygon points="116,114 130,128 116,142 102,128" fill="#f59e0b"/>
+  </g>
+  <g class="mode-light">
+    <rect width="256"height="256" rx="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="4"/>
+  <!-- Solid Cyan Medallion Disc -->
+  <circle cx="128" cy="128" r="84" fill="#0284c7"/>
+  <!-- Negative Space Vertical Pillar Cut -->
+  <rect x="76" y="56" width="28" height="144" rx="6" fill="#ffffff"/>
+  <!-- Negative Space Upper Diagonal Cut -->
+  <polygon points="112,132 168,76 196,76 132,140" fill="#ffffff"/>
+  <!-- Negative Space Lower Diagonal Cut -->
+  <polygon points="132,116 196,180 168,180 112,124" fill="#ffffff"/>
+  <!-- Inset Golden Amber Jewel -->
+  <polygon points="116,114 130,128 116,142 102,128" fill="#f59e0b"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="concept-a-chisel-title">
+  <title id="concept-a-chisel-title">Klyph The Architectural Chisel</title>
+  <style>
+    :root {
+      --klyph-base: #080b10;
+      --klyph-glyph: #00f0ff;
+      --klyph-keystone: #f59e0b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --klyph-base: #fbfaf6;
+        --klyph-glyph: #0284c7;
+        --klyph-keystone: #d97706;
+      }
+    }
+    .klyph-base { fill: var(--klyph-base); }
+    .klyph-glyph { fill: var(--klyph-glyph); }
+    .klyph-keystone { fill: var(--klyph-keystone); }
+  </style>
+<rect width="256" height="256" rx="60" class="klyph-base"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" class="klyph-glyph"/>
+  <path d="M96 136 L176 56 H216 L124 148 Z" class="klyph-glyph"/>
+  <path d="M124 108 L216 200 H176 L96 120 Z" class="klyph-glyph"/>
+  <polygon points="116,102 142,128 116,154 90,128" class="klyph-keystone"/>
+</svg>

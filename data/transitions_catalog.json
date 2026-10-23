@@ -1,0 +1,34 @@
+{
+  "consequence": [
+    "Consequently,",
+    "Therefore,",
+    "As a result,",
+    "Accordingly,",
+    "Thus,"
+  ],
+  "contrast": [
+    "However,",
+    "Conversely,",
+    "Nonetheless,",
+    "In contrast,",
+    "On the other hand,"
+  ],
+  "addition": [
+    "Furthermore,",
+    "Moreover,",
+    "In addition,",
+    "Additionally,"
+  ],
+  "elaboration": [
+    "Specifically,",
+    "In particular,",
+    "More precisely,",
+    "Namely,"
+  ],
+  "conclusion": [
+    "Ultimately,",
+    "In summary,",
+    "To conclude,",
+    "In essence,"
+  ]
+}

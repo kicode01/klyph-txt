@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="r4-title">
+  <title id="r4-title">Klyph Refined 4 - The Monumental Glyphic Ingot Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <circle cx="128" cy="128" r="88" fill="#0284c7"/>
+  <rect x="76" y="56" width="28" height="144" rx="4" fill="#fbfaf6"/>
+  <path d="M112 132 L168 76 H192 L128 140 Z" fill="#fbfaf6"/>
+  <path d="M128 116 L192 180 H168 L112 124 Z" fill="#fbfaf6"/>
+  <polygon points="116,114 130,128 116,142 102,128" fill="#d97706"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="t1-title">
+  <title id="t1-title">Klyph Tier 1 - The Monolith Chisel Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#0284c7"/>
+  <path d="M96 136 L176 56 H216 L124 148 Z" fill="#0284c7"/>
+  <path d="M124 108 L216 200 H176 L96 120 Z" fill="#0284c7"/>
+  <polygon points="116,102 142,128 116,154 90,128" fill="#d97706"/>
+</svg>

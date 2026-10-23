@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="s33-title">
+  <title id="s33-title">Klyph S3 - The Isometric Hexagonal Ingot</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Top isometric face -->
+  <polygon points="128,40 204,84 128,128 52,84" fill="#38bdf8"/>
+  <!-- Left isometric face -->
+  <polygon points="52,84 128,128 128,216 52,172" fill="#00f0ff"/>
+  <!-- Right isometric face -->
+  <polygon points="128,128 204,84 204,172 128,216" fill="#0284c7"/>
+  <!-- Center amber keystone nucleus -->
+  <polygon points="128,106 148,118 128,130 108,118" fill="#f59e0b"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="redesign-2-quill-title">
+  <title id="redesign-2-quill-title">Klyph The Aerodynamic Quill Wing</title>
+  <style>
+    :root {
+      --klyph-base: #080b10;
+      --klyph-glyph: #00f0ff;
+      --klyph-keystone: #f59e0b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --klyph-base: #fbfaf6;
+        --klyph-glyph: #0284c7;
+        --klyph-keystone: #d97706;
+      }
+    }
+    .klyph-base { fill: var(--klyph-base); }
+    .klyph-glyph { fill: var(--klyph-glyph); }
+    .klyph-keystone { fill: var(--klyph-keystone); }
+  </style>
+<rect width="256" height="256" rx="60" class="klyph-base"/>
+  <!-- Upper feather vane: soaring forward wing -->
+  <path d="M72 184 C92 144 132 88 208 48 C188 88 176 132 172 164 L120 112 Z" class="klyph-glyph"/>
+  <!-- Lower feather vane: grounding stabilizer -->
+  <path d="M64 192 L120 136 L164 180 C140 200 112 212 80 216 Z" fill="#0284c7"/>
+  <!-- Golden ink nib writing point -->
+  <polygon points="56,200 72,184 64,192 48,208" class="klyph-keystone"/>
+  <!-- Central breather aperture keystone -->
+  <circle cx="120" cy="124" r="10" class="klyph-keystone"/>
+</svg>

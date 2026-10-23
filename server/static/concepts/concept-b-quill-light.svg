@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="cb-title">
+  <title id="cb-title">Klyph Concept B - The Editorial Feather Quill Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <path d="M72 196 L196 72 L184 60 L60 184 Z" fill="#0284c7"/>
+  <path d="M116 116 L160 72 H200 L140 132 Z" fill="#0284c7"/>
+  <path d="M136 136 L196 196 H156 L112 152 Z" fill="#0284c7"/>
+  <polygon points="60,184 72,196 52,216 40,204" fill="#d97706"/>
+</svg>

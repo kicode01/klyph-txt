@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="e2-title">
+  <title id="e2-title">Klyph Enterprise 2 - The Modular Tessellation</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Pillar: pure vertical foundation -->
+  <path d="M52 44 H92 V212 H52 Z" fill="#00f0ff"/>
+  <!-- Upper facet: 45-deg right-angled triangle -->
+  <polygon points="108,44 196,44 108,132" fill="#00f0ff"/>
+  <!-- Lower facet: 45-deg parallelogram -->
+  <polygon points="108,124 196,212 108,212" fill="#00f0ff"/>
+  <!-- Central golden keystone diamond linking the tessellation -->
+  <polygon points="152,88 196,132 152,176 108,132" fill="#f59e0b"/>
+</svg>

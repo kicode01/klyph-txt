@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="r1-title">
+  <title id="r1-title">Klyph Redesign 1 - The Editorial Flow Loop</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Outer flowing circular crescent -->
+  <path d="M128 36 C77 36 36 77 36 128 C36 179 77 220 128 220 C168 220 202 195 215 158 H178 C168 178 149 190 128 190 C94 190 66 162 66 128 C66 94 94 66 128 66 C152 66 173 80 183 100 L212 78 C194 52 163 36 128 36 Z" fill="#00f0ff"/>
+  <!-- Inner forward editorial check gesture -->
+  <path d="M112 128 L144 160 L220 84 L200 64 L144 120 L132 108 Z" fill="#00f0ff"/>
+  <!-- Central golden accent focal point -->
+  <circle cx="128" cy="128" r="14" fill="#f59e0b"/>
+</svg>

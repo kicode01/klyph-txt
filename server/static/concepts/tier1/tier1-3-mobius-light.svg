@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="t3-title">
+  <title id="t3-title">Klyph Tier 1 - The Interlocking Prism Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#0284c7"/>
+  <polygon points="104,124 176,52 216,52 144,124" fill="#0284c7"/>
+  <polygon points="144,132 216,204 176,204 104,132" fill="#0369a1"/>
+  <polygon points="112,104 140,128 112,152 84,128" fill="#d97706"/>
+</svg>

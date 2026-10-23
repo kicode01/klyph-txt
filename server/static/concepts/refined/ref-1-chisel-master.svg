@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="r1-title">
+  <title id="r1-title">Klyph Refined 1 - The Architectural Chisel Master</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Vertical foundation pillar -->
+  <rect x="48" y="40" width="38" height="176" rx="8" fill="#00f0ff"/>
+  <!-- Upper 45-deg chisel blade -->
+  <path d="M104 128 L180 52 H216 L136 132 Z" fill="#00f0ff"/>
+  <!-- Lower 45-deg foundation blade -->
+  <path d="M136 124 L216 204 H180 L104 128 Z" fill="#00f0ff"/>
+  <!-- Interlocking golden keystone diamond -->
+  <polygon points="104,128 126,106 148,128 126,150" fill="#f59e0b"/>
+</svg>

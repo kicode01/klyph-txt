@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="64" fill="#0284c7" stroke="#0369a1" stroke-width="4"/>
+  <!-- Grounded Letter K -->
+  <path d="M 54 44 H 96 V 216 H 54 Z M 96 114 L 166 44 H 216 L 132 128 L 220 216 H 170 L 96 142 Z" fill="#ffffff"/>
+  <!-- Yellow Full Wedge Fill (Filling the entire triangular crook) -->
+  <polygon points="96,92 132,128 96,164" fill="#f59e0b"/>
+</svg>

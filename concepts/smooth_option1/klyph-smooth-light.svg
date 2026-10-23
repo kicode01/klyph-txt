@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="klyph-smooth-title">
+  <title id="klyph-smooth-title">Klyph Icon - Smooth Grounded Monogram with Yellow Wedge (Light)</title>
+  <rect width="256" height="256" rx="64" fill="#0284c7" stroke="#0369a1" stroke-width="4"/>
+  <!-- Grounded Foundation Stem (Smooth Rounded Terminals) -->
+  <rect x="54" y="44" width="42" height="172" rx="14" fill="#ffffff"/>
+  <!-- Fused Diagonal Blades with Smooth Rounded Terminals -->
+  <path d="M 96 114 L 162 48 C 166 44 174 44 182 44 H 204 C 214 44 218 50 215 57 L 132 128 L 215 199 C 218 206 214 216 204 216 H 182 C 174 216 166 216 162 212 L 96 146 Z" fill="#ffffff"/>
+  <!-- Smooth Yellow Wedge (Seamless Fit into the Crook) -->
+  <path d="M 96 92 L 126 122 C 130 126 130 130 126 134 L 96 164 Z" fill="#f59e0b"/>
+</svg>

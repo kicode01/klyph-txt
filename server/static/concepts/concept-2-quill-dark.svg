@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="c2-title">
+  <title id="c2-title">Klyph Concept 2 - The Editorial Quill Nib</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Left tine: solid vertical spine with 45-deg shoulder -->
+  <path d="M124 44 L68 100 V196 H124 V144 L114 134 V122 L124 112 Z" fill="#00f0ff"/>
+  <!-- Right upper tine: 45-deg upward chisel forming upper K arm -->
+  <path d="M132 44 L188 100 L148 140 L132 124 V44 Z" fill="#00f0ff"/>
+  <!-- Right lower tine: 45-deg downward foundation forming lower K arm -->
+  <path d="M132 132 L150 150 L188 188 V196 H132 Z" fill="#00f0ff"/>
+  <!-- Central breather aperture keystone -->
+  <polygon points="128,116 138,128 128,140 118,128" fill="#f59e0b"/>
+</svg>

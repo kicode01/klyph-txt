@@ -1,0 +1,21 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local Scratch & Checkpoints
+scratch/
+models/
+*.log
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

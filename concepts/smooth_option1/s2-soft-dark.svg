@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Stem -->
+  <path d="M 54 56 C 54 48 60 44 68 44 H 82 C 90 44 96 48 96 56 V 204 C 96 212 90 216 82 216 H 68 C 60 216 54 212 54 204 Z" fill="#00f0ff"/>
+  <!-- Upper Blade (Smooth Rounded Corners) -->
+  <path d="M 96 114 L 160 50 C 166 44 174 44 182 44 H 206 C 214 44 218 50 216 58 L 136 132 Z" fill="#00f0ff"/>
+  <!-- Lower Blade (Smooth Rounded Corners) -->
+  <path d="M 136 124 L 216 198 C 218 206 214 216 206 216 H 182 C 174 216 166 216 160 210 L 96 142 Z" fill="#00f0ff"/>
+  <!-- Yellow Smooth Wedge (Filleted apex and edges) -->
+  <path d="M 96 98 L 124 126 C 126 128 126 130 124 132 L 96 160 Z" fill="#f59e0b" stroke="#f59e0b" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="k-pri-d">
+  <title id="k-pri-d">Klyph Prism - Refract the prompt into pure spectrum</title>
+  <!-- Structured Input Pillar -->
+  <rect x="52" y="44" width="38" height="168" rx="12" fill="#ffffff"/>
+  <!-- Radiant Upper Voice Beam -->
+  <path d="M 100 116 L 166 50 C 170 46 178 44 188 44 H 208 C 216 44 220 50 216 58 L 146 128 Z" fill="#38bdf8"/>
+  <!-- Radiant Lower Voice Beam -->
+  <path d="M 146 128 L 216 198 C 220 206 216 212 208 212 H 188 C 178 212 170 210 166 206 L 100 140 Z" fill="#f59e0b"/>
+  <!-- Refraction Aperture Core -->
+  <polygon points="100,100 128,128 100,156" fill="#00f0ff"/>
+</svg>

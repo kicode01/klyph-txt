@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="s3-3-hex-title">
+  <title id="s3-3-hex-title">Klyph The Isometric Hexagonal Ingot</title>
+  <style>
+    :root {
+      --klyph-base: #080b10;
+      --klyph-glyph: #00f0ff;
+      --klyph-keystone: #f59e0b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --klyph-base: #fbfaf6;
+        --klyph-glyph: #0284c7;
+        --klyph-keystone: #d97706;
+      }
+    }
+    .klyph-base { fill: var(--klyph-base); }
+    .klyph-glyph { fill: var(--klyph-glyph); }
+    .klyph-keystone { fill: var(--klyph-keystone); }
+  </style>
+<rect width="256" height="256" rx="60" class="klyph-base"/>
+  <!-- Top isometric face -->
+  <polygon points="128,40 204,84 128,128 52,84" fill="#38bdf8"/>
+  <!-- Left isometric face -->
+  <polygon points="52,84 128,128 128,216 52,172" class="klyph-glyph"/>
+  <!-- Right isometric face -->
+  <polygon points="128,128 204,84 204,172 128,216" fill="#0284c7"/>
+  <!-- Center amber keystone nucleus -->
+  <polygon points="128,106 148,118 128,130 108,118" class="klyph-keystone"/>
+</svg>

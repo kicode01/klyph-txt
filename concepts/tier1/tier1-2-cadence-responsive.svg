@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="tier1-2-cadence-title">
+  <title id="tier1-2-cadence-title">Klyph The Editorial Cadence</title>
+  <style>
+    :root {
+      --klyph-base: #080b10;
+      --klyph-glyph: #00f0ff;
+      --klyph-keystone: #f59e0b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --klyph-base: #fbfaf6;
+        --klyph-glyph: #0284c7;
+        --klyph-keystone: #d97706;
+      }
+    }
+    .klyph-base { fill: var(--klyph-base); }
+    .klyph-glyph { fill: var(--klyph-glyph); }
+    .klyph-keystone { fill: var(--klyph-keystone); }
+  </style>
+<rect width="256" height="256" rx="60" class="klyph-base"/>
+  <!-- Left anchor stem -->
+  <rect x="52" y="44" width="32" height="168" rx="6" class="klyph-glyph"/>
+  <!-- Upper cadence chevron: angled bracket moving upward -->
+  <path d="M104 128 L180 52 H216 L140 128 Z" class="klyph-glyph"/>
+  <!-- Lower cadence chevron: angled bracket grounding downward -->
+  <path d="M140 128 L216 204 H180 L104 128 Z" class="klyph-glyph"/>
+  <!-- Floating amber rhythm pip -->
+  <rect x="92" y="114" width="28" height="28" rx="6" class="klyph-keystone"/>
+</svg>

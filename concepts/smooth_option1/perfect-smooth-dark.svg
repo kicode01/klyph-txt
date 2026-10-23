@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="64" fill="#080b10"/>
+  <!-- Grounded Foundation Stem (Smooth Rounded Terminals) -->
+  <rect x="54" y="44" width="42" height="172" rx="14" fill="#00f0ff"/>
+  <!-- Upper Soaring Blade (Smooth Rounded Terminals) -->
+  <path d="M 96 114 L 160 50 C 166 44 174 44 182 44 H 204 C 214 44 218 50 215 57 L 138 128 Z" fill="#00f0ff"/>
+  <!-- Lower Grounded Blade (Smooth Rounded Terminals) -->
+  <path d="M 138 128 L 215 199 C 218 206 214 216 204 216 H 182 C 174 216 166 216 160 210 L 96 142 Z" fill="#00f0ff"/>
+  <!-- Smooth Yellow Wedge with Rounded Apex -->
+  <path d="M 96 96 L 123 123 C 126 126 126 130 123 133 L 96 160 Z" fill="#f59e0b"/>
+</svg>

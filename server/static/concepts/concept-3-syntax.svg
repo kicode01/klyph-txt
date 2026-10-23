@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="c3-title">
+  <title id="c3-title">Klyph Concept 3 - The AST Syntax Prism</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Left syntax stem: vertical token anchor -->
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <!-- Upper transform chevron: angled bracket flowing right -->
+  <path d="M104 128 L184 48 H212 L132 128 Z" fill="#00f0ff"/>
+  <!-- Lower transform chevron: angled bracket grounding right -->
+  <path d="M104 128 L132 128 L212 208 H184 Z" fill="#00f0ff"/>
+  <!-- Central intersecting prism polygon (the neural nexus) -->
+  <polygon points="104,128 132,100 160,128 132,156" fill="#f59e0b"/>
+</svg>

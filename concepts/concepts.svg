@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1498" viewBox="0 0 1600 1498"><rect width="1600" height="1498" fill="#f7f7f4"/><text x="60" y="78" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="700" fill="#161616">Klyph — Identity Concepts</text><text x="60" y="116" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" fill="#6b6b6b">Exploration of 4 distinct brand archetypes: Monogram, Pictorial, Computational, and Inscription</text><rect x="60" y="150" width="474.667" height="630" rx="18" fill="#fff" stroke="#161616" stroke-width="2"/><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ca-title" viewBox="0 0 256 256" x="90" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <title id="c0-ca-title">Klyph Concept A - The Architectural Chisel</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <path d="M96 136 L176 56 H216 L124 148 Z" fill="#00f0ff"/>
+  <path d="M124 108 L216 200 H176 L96 120 Z" fill="#00f0ff"/>
+  <polygon points="116,102 142,128 116,154 90,128" fill="#f59e0b"/>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ca-title" viewBox="0 0 256 256" x="90" y="516" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title id="s064-ca-title">Klyph Concept A - The Architectural Chisel</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <path d="M96 136 L176 56 H216 L124 148 Z" fill="#00f0ff"/>
+  <path d="M124 108 L216 200 H176 L96 120 Z" fill="#00f0ff"/>
+  <polygon points="116,102 142,128 116,154 90,128" fill="#f59e0b"/>
+</svg>
+</g><text x="122" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ca-title" viewBox="0 0 256 256" x="180" y="548" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title id="s032-ca-title">Klyph Concept A - The Architectural Chisel</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <path d="M96 136 L176 56 H216 L124 148 Z" fill="#00f0ff"/>
+  <path d="M124 108 L216 200 H176 L96 120 Z" fill="#00f0ff"/>
+  <polygon points="116,102 142,128 116,154 90,128" fill="#f59e0b"/>
+</svg>
+</g><text x="196" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ca-title" viewBox="0 0 256 256" x="238" y="564" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title id="s016-ca-title">Klyph Concept A - The Architectural Chisel</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <path d="M96 136 L176 56 H216 L124 148 Z" fill="#00f0ff"/>
+  <path d="M124 108 L216 200 H176 L96 120 Z" fill="#00f0ff"/>
+  <polygon points="116,102 142,128 116,154 90,128" fill="#f59e0b"/>
+</svg>
+</g><text x="246" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="90.0" y="636" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">A · The Monolith Chisel</text><text x="90.0" y="664" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#161616" letter-spacing="1.5">RECOMMENDED</text><text x="90.0" y="698" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Monolithic vertical pillar with dual 45-deg</text><text x="90.0" y="724" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">chisel planes and amber keystone.</text><rect x="562.667" y="150" width="474.667" height="630" rx="18" fill="#fff" stroke="#e4e4e0" stroke-width="1"/><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cb-title" viewBox="0 0 256 256" x="592.667" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <title id="c1-cb-title">Klyph Concept B - The Editorial Feather Quill</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Central quill shaft angled at 45 deg -->
+  <path d="M72 196 L196 72 L184 60 L60 184 Z" fill="#00f0ff"/>
+  <!-- Upper feather vane / upper K arm -->
+  <path d="M116 116 L160 72 H200 L140 132 Z" fill="#00f0ff"/>
+  <!-- Lower feather vane / lower K arm -->
+  <path d="M136 136 L196 196 H156 L112 152 Z" fill="#00f0ff"/>
+  <!-- Golden ink nib / writing tip -->
+  <polygon points="60,184 72,196 52,216 40,204" fill="#f59e0b"/>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cb-title" viewBox="0 0 256 256" x="592.667" y="516" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title id="s164-cb-title">Klyph Concept B - The Editorial Feather Quill</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Central quill shaft angled at 45 deg -->
+  <path d="M72 196 L196 72 L184 60 L60 184 Z" fill="#00f0ff"/>
+  <!-- Upper feather vane / upper K arm -->
+  <path d="M116 116 L160 72 H200 L140 132 Z" fill="#00f0ff"/>
+  <!-- Lower feather vane / lower K arm -->
+  <path d="M136 136 L196 196 H156 L112 152 Z" fill="#00f0ff"/>
+  <!-- Golden ink nib / writing tip -->
+  <polygon points="60,184 72,196 52,216 40,204" fill="#f59e0b"/>
+</svg>
+</g><text x="624.667" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cb-title" viewBox="0 0 256 256" x="682.667" y="548" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title id="s132-cb-title">Klyph Concept B - The Editorial Feather Quill</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Central quill shaft angled at 45 deg -->
+  <path d="M72 196 L196 72 L184 60 L60 184 Z" fill="#00f0ff"/>
+  <!-- Upper feather vane / upper K arm -->
+  <path d="M116 116 L160 72 H200 L140 132 Z" fill="#00f0ff"/>
+  <!-- Lower feather vane / lower K arm -->
+  <path d="M136 136 L196 196 H156 L112 152 Z" fill="#00f0ff"/>
+  <!-- Golden ink nib / writing tip -->
+  <polygon points="60,184 72,196 52,216 40,204" fill="#f59e0b"/>
+</svg>
+</g><text x="698.667" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cb-title" viewBox="0 0 256 256" x="740.667" y="564" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title id="s116-cb-title">Klyph Concept B - The Editorial Feather Quill</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Central quill shaft angled at 45 deg -->
+  <path d="M72 196 L196 72 L184 60 L60 184 Z" fill="#00f0ff"/>
+  <!-- Upper feather vane / upper K arm -->
+  <path d="M116 116 L160 72 H200 L140 132 Z" fill="#00f0ff"/>
+  <!-- Lower feather vane / lower K arm -->
+  <path d="M136 136 L196 196 H156 L112 152 Z" fill="#00f0ff"/>
+  <!-- Golden ink nib / writing tip -->
+  <polygon points="60,184 72,196 52,216 40,204" fill="#f59e0b"/>
+</svg>
+</g><text x="748.667" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="592.6666666666667" y="636" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">B · The Editorial Feather Quill</text><text x="592.6666666666667" y="670" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Energetic 45-deg writing quill whose</text><text x="592.6666666666667" y="696" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">geometric vanes outline an italic K.</text><rect x="1065.33" y="150" width="474.667" height="630" rx="18" fill="#fff" stroke="#e4e4e0" stroke-width="1"/><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cc-title" viewBox="0 0 256 256" x="1095.33" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <title id="c2-cc-title">Klyph Concept C - The AST Syntax Tree</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Vertical token anchor -->
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <!-- Floating upper syntax chevron -->
+  <path d="M120 112 L184 48 H212 L136 124 Z" fill="#00f0ff"/>
+  <!-- Floating lower syntax chevron -->
+  <path d="M136 132 L212 208 H184 L120 144 Z" fill="#00f0ff"/>
+  <!-- Circular AST root parse node -->
+  <circle cx="116" cy="128" r="16" fill="#f59e0b"/>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cc-title" viewBox="0 0 256 256" x="1095.33" y="516" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title id="s264-cc-title">Klyph Concept C - The AST Syntax Tree</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Vertical token anchor -->
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <!-- Floating upper syntax chevron -->
+  <path d="M120 112 L184 48 H212 L136 124 Z" fill="#00f0ff"/>
+  <!-- Floating lower syntax chevron -->
+  <path d="M136 132 L212 208 H184 L120 144 Z" fill="#00f0ff"/>
+  <!-- Circular AST root parse node -->
+  <circle cx="116" cy="128" r="16" fill="#f59e0b"/>
+</svg>
+</g><text x="1127.33" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cc-title" viewBox="0 0 256 256" x="1185.33" y="548" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title id="s232-cc-title">Klyph Concept C - The AST Syntax Tree</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Vertical token anchor -->
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <!-- Floating upper syntax chevron -->
+  <path d="M120 112 L184 48 H212 L136 124 Z" fill="#00f0ff"/>
+  <!-- Floating lower syntax chevron -->
+  <path d="M136 132 L212 208 H184 L120 144 Z" fill="#00f0ff"/>
+  <!-- Circular AST root parse node -->
+  <circle cx="116" cy="128" r="16" fill="#f59e0b"/>
+</svg>
+</g><text x="1201.33" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cc-title" viewBox="0 0 256 256" x="1243.33" y="564" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title id="s216-cc-title">Klyph Concept C - The AST Syntax Tree</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Vertical token anchor -->
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <!-- Floating upper syntax chevron -->
+  <path d="M120 112 L184 48 H212 L136 124 Z" fill="#00f0ff"/>
+  <!-- Floating lower syntax chevron -->
+  <path d="M136 132 L212 208 H184 L120 144 Z" fill="#00f0ff"/>
+  <!-- Circular AST root parse node -->
+  <circle cx="116" cy="128" r="16" fill="#f59e0b"/>
+</svg>
+</g><text x="1251.33" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="1095.3333333333335" y="636" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">C · The AST Syntax Tree</text><text x="1095.3333333333335" y="670" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Editorial anchor stem with floating syntax</text><text x="1095.3333333333335" y="696" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">chevrons (&gt; &lt;) and parse node.</text><rect x="60" y="808" width="474.667" height="630" rx="18" fill="#fff" stroke="#e4e4e0" stroke-width="1"/><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cd-title" viewBox="0 0 256 256" x="90" y="848" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <title id="c3-cd-title">Klyph Concept D - The Glyphic Medallion</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Solid cyan stone medallion -->
+  <circle cx="128" cy="128" r="88" fill="#00f0ff"/>
+  <!-- Incised negative-space vertical channel -->
+  <rect x="80" y="56" width="28" height="144" rx="4" fill="#080b10"/>
+  <!-- Incised negative-space upper diagonal channel -->
+  <path d="M116 132 L172 76 H196 L132 140 Z" fill="#080b10"/>
+  <!-- Incised negative-space lower diagonal channel -->
+  <path d="M132 116 L196 180 H172 L116 124 Z" fill="#080b10"/>
+  <!-- Inset golden keystone jewel -->
+  <polygon points="120,114 134,128 120,142 106,128" fill="#f59e0b"/>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cd-title" viewBox="0 0 256 256" x="90" y="1174" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title id="s364-cd-title">Klyph Concept D - The Glyphic Medallion</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Solid cyan stone medallion -->
+  <circle cx="128" cy="128" r="88" fill="#00f0ff"/>
+  <!-- Incised negative-space vertical channel -->
+  <rect x="80" y="56" width="28" height="144" rx="4" fill="#080b10"/>
+  <!-- Incised negative-space upper diagonal channel -->
+  <path d="M116 132 L172 76 H196 L132 140 Z" fill="#080b10"/>
+  <!-- Incised negative-space lower diagonal channel -->
+  <path d="M132 116 L196 180 H172 L116 124 Z" fill="#080b10"/>
+  <!-- Inset golden keystone jewel -->
+  <polygon points="120,114 134,128 120,142 106,128" fill="#f59e0b"/>
+</svg>
+</g><text x="122" y="1258" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cd-title" viewBox="0 0 256 256" x="180" y="1206" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title id="s332-cd-title">Klyph Concept D - The Glyphic Medallion</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Solid cyan stone medallion -->
+  <circle cx="128" cy="128" r="88" fill="#00f0ff"/>
+  <!-- Incised negative-space vertical channel -->
+  <rect x="80" y="56" width="28" height="144" rx="4" fill="#080b10"/>
+  <!-- Incised negative-space upper diagonal channel -->
+  <path d="M116 132 L172 76 H196 L132 140 Z" fill="#080b10"/>
+  <!-- Incised negative-space lower diagonal channel -->
+  <path d="M132 116 L196 180 H172 L116 124 Z" fill="#080b10"/>
+  <!-- Inset golden keystone jewel -->
+  <polygon points="120,114 134,128 120,142 106,128" fill="#f59e0b"/>
+</svg>
+</g><text x="196" y="1258" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cd-title" viewBox="0 0 256 256" x="238" y="1222" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title id="s316-cd-title">Klyph Concept D - The Glyphic Medallion</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Solid cyan stone medallion -->
+  <circle cx="128" cy="128" r="88" fill="#00f0ff"/>
+  <!-- Incised negative-space vertical channel -->
+  <rect x="80" y="56" width="28" height="144" rx="4" fill="#080b10"/>
+  <!-- Incised negative-space upper diagonal channel -->
+  <path d="M116 132 L172 76 H196 L132 140 Z" fill="#080b10"/>
+  <!-- Incised negative-space lower diagonal channel -->
+  <path d="M132 116 L196 180 H172 L116 124 Z" fill="#080b10"/>
+  <!-- Inset golden keystone jewel -->
+  <polygon points="120,114 134,128 120,142 106,128" fill="#f59e0b"/>
+</svg>
+</g><text x="246" y="1258" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="90.0" y="1294" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">D · The Glyphic Medallion</text><text x="90.0" y="1328" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Solid cyan stone medallion with razor-sharp</text><text x="90.0" y="1354" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">negative space stencil K.</text></svg>

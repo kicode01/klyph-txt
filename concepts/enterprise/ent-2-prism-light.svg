@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="e2-title">
+  <title id="e2-title">Klyph Enterprise 2 - The Modular Tessellation Light</title>
+  <rect width="256" height="256" rx="60" fill="#fbfaf6"/>
+  <path d="M52 44 H92 V212 H52 Z" fill="#0284c7"/>
+  <polygon points="108,44 196,44 108,132" fill="#0284c7"/>
+  <polygon points="108,124 196,212 108,212" fill="#0284c7"/>
+  <polygon points="152,88 196,132 152,176 108,132" fill="#d97706"/>
+</svg>

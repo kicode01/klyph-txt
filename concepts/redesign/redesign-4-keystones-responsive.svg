@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="redesign-4-keystones-title">
+  <title id="redesign-4-keystones-title">Klyph The Keystones Pinwheel</title>
+  <style>
+    :root {
+      --klyph-base: #080b10;
+      --klyph-glyph: #00f0ff;
+      --klyph-keystone: #f59e0b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --klyph-base: #fbfaf6;
+        --klyph-glyph: #0284c7;
+        --klyph-keystone: #d97706;
+      }
+    }
+    .klyph-base { fill: var(--klyph-base); }
+    .klyph-glyph { fill: var(--klyph-glyph); }
+    .klyph-keystone { fill: var(--klyph-keystone); }
+  </style>
+<rect width="256" height="256" rx="60" class="klyph-base"/>
+  <!-- Top Keystone Diamond -->
+  <polygon points="128,44 156,72 128,100 100,72" class="klyph-glyph"/>
+  <!-- Right Keystone Diamond -->
+  <polygon points="212,128 184,156 156,128 184,100" class="klyph-glyph"/>
+  <!-- Bottom Keystone Diamond -->
+  <polygon points="128,212 100,184 128,156 156,184" class="klyph-glyph"/>
+  <!-- Left Keystone Diamond -->
+  <polygon points="44,128 72,100 100,128 72,156" class="klyph-glyph"/>
+  <!-- Central golden diamond keystone star -->
+  <polygon points="128,112 144,128 128,144 112,128" class="klyph-keystone"/>
+</svg>

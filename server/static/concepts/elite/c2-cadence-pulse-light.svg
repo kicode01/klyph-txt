@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="c2-title">
+  <title id="c2-title">Klyph 2 - The Cadence Pulse</title>
+  <rect width="256" height="256" rx="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="4"/>
+  <!-- Vertical Foundation Pillar -->
+  <rect x="52" y="44" width="36" height="168" rx="8" fill="#0284c7"/>
+  <!-- Inner Kinetic 45-deg Chevron -->
+  <path d="M 176 68 L 116 128 L 176 188" fill="none" stroke="#0284c7" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Outer Acceleration 45-deg Wave -->
+  <path d="M 216 68 L 156 128 L 216 188" fill="none" stroke="#0369a1" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Radiant Amber Spark Nucleus -->
+  <polygon points="116,128 126,118 136,128 126,138" fill="#f59e0b"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="s31-title">
+  <title id="s31-title">Klyph S3 - The Origami Editorial Fold</title>
+  <rect width="256" height="256" rx="60" fill="#080b10"/>
+  <!-- Front vertical pillar -->
+  <rect x="52" y="44" width="36" height="168" rx="6" fill="#00f0ff"/>
+  <!-- Upper fold facet: light cyan -->
+  <polygon points="96,132 176,52 216,52 136,132" fill="#00f0ff"/>
+  <!-- Lower under-fold facet: deeper lapis tone creating physical depth -->
+  <polygon points="120,116 200,196 160,196 96,132" fill="#0284c7"/>
+  <!-- Central golden amber keystone crease -->
+  <polygon points="96,132 120,108 144,132 120,156" fill="#f59e0b"/>
+</svg>

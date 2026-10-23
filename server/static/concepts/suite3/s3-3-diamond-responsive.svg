@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="s3-3-diamond-title">
+  <title id="s3-3-diamond-title">Klyph The Isometric Diamond Ingot</title>
+  <style>
+    :root {
+      --klyph-base: #080b10;
+      --klyph-glyph: #00f0ff;
+      --klyph-keystone: #f59e0b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --klyph-base: #fbfaf6;
+        --klyph-glyph: #0284c7;
+        --klyph-keystone: #d97706;
+      }
+    }
+    .klyph-base { fill: var(--klyph-base); }
+    .klyph-glyph { fill: var(--klyph-glyph); }
+    .klyph-keystone { fill: var(--klyph-keystone); }
+  </style>
+<rect width="256" height="256" rx="60" class="klyph-base"/>
+  <!-- Outer 45-deg diamond ingot -->
+  <polygon points="128,40 216,128 128,216 40,128" class="klyph-glyph"/>
+  <!-- Negative-space vertical channel -->
+  <rect x="76" y="56" width="28" height="144" rx="4" class="klyph-base"/>
+  <!-- Negative-space upper diagonal channel -->
+  <path d="M112 132 L168 76 H192 L128 140 Z" class="klyph-base"/>
+  <!-- Negative-space lower diagonal channel -->
+  <path d="M128 116 L192 180 H168 L112 124 Z" class="klyph-base"/>
+  <!-- Central amber keystone jewel -->
+  <polygon points="116,114 130,128 116,142 102,128" class="klyph-keystone"/>
+</svg>
